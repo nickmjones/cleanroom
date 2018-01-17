@@ -1,0 +1,51 @@
+.swatch {
+  border: 1px solid #d7d7d7;
+  border-bottom: 1px solid #777;
+  padding: $unit-l;
+  display: inline-block;
+  text-align: center;
+  border-radius: 4px;
+  margin: 0 $unit-l $unit-l 0;
+  width: 200px;
+  float: left;
+}
+.swatch--red {
+  background: $color-red;
+}
+.swatch--yellow {
+  background: $color-yellow;
+}
+.swatch--blue {
+  background: $color-blue;
+}
+.swatch--teal {
+  background: $color-teal;
+}
+.swatch--purple {
+  background: $color-purple;
+}
+.swatch--gray {
+  background: $color-gray;
+}
+
+.swatch--warn {
+  background: $color-warn;
+}
+.swatch--success {
+  background: $color-success;
+}
+.swatch--error {
+  background: $color-error;
+}
+
+
+.swatch ul {
+  list-style: none;
+}
+.swatch ul li {
+  color: transparentize(#fff, 0.3);
+}
+.swatch ul li.var {
+  color: #fff;
+  font-family: monospace;
+}

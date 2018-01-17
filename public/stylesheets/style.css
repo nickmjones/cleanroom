@@ -43,6 +43,14 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+a {
+  color: #3626A7;
+  text-decoration: none; }
+
+a:hover {
+  color: #1b1354;
+  text-decoration: underline; }
+
 @font-face {
   font-family: "SharpSans";
   font-style: normal;
@@ -170,8 +178,8 @@ blockquote {
     box-shadow: none; }
 
 .btn--primary {
-  background: #1e39d2;
-  color: #c5cdf7;
+  background: #3626A7;
+  color: #b5adec;
   border: 2px solid transparent; }
 
 .btn--secondary {
@@ -182,6 +190,10 @@ blockquote {
 section {
   border-bottom: 1px solid #939393;
   padding: 24px; }
+  section:after {
+    content: "" !important;
+    display: block !important;
+    clear: both !important; }
 
 header, footer {
   padding: 24px; }
@@ -191,5 +203,53 @@ header {
 
 footer {
   background: #939393; }
+
+.swatch {
+  border: 1px solid #d7d7d7;
+  border-bottom: 1px solid #777;
+  padding: 16px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 4px;
+  margin: 0 16px 16px 0;
+  width: 200px;
+  float: left; }
+
+.swatch--red {
+  background: #fa3c00; }
+
+.swatch--yellow {
+  background: #F3B700; }
+
+.swatch--blue {
+  background: #3626A7; }
+
+.swatch--teal {
+  background: #9AD2CB; }
+
+.swatch--purple {
+  background: #a639b2; }
+
+.swatch--gray {
+  background: #939393; }
+
+.swatch--warn {
+  background: #FF9F1C; }
+
+.swatch--success {
+  background: #23b268; }
+
+.swatch--error {
+  background: #710000; }
+
+.swatch ul {
+  list-style: none; }
+
+.swatch ul li {
+  color: rgba(255, 255, 255, 0.7); }
+
+.swatch ul li.var {
+  color: #fff;
+  font-family: monospace; }
 
 /*# sourceMappingURL=style.css.map */

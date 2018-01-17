@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFontConfig = { classes: false, events: false };
+      WebFont.load({
+        custom: { families: ['SharpSans'] },
+        timeout: 4000
+      });
+    </script>
+  </head>
+  <body>
+    <% include shared/header %>
+
+    <section class="type">
+      <h1>Header 1</h1>
+      <h2>Header 2</h2>
+      <h3>Header 3</h3>
+      <h4>Header 4</h4>
+    </section>
+
+    <section class="text">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nobis temporibus explicabo unde illo similique iste eligendi obcaecati officiis a iusto aliquid numquam nisi perferendis cum earum, tempora molestias, excepturi!
+      </p>
+    </section>
+
+    <section class="colors">
+      <h2>Colors</h2>
+      <p>Colors will go here.</p>
+    </section>
+
+    <section class="buttons">
+      <h2>Buttons &amp; Links</h2>
+      <div class="btn btn--primary">Primary Button</div>
+      <div class="btn btn--secondary">Secondary Button</div>
+    </section>
+    
+    <% include shared/footer %>
+  </body>
+</html>

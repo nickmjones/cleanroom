@@ -1,0 +1,14 @@
+section {
+  border-bottom: 1px solid $color-gray;
+  padding: $unit-xl;
+}
+
+header, footer {
+  padding: $unit-xl;
+}
+header {
+  background: $color-red;
+}
+footer {
+  background: $color-gray;
+}

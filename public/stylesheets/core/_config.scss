@@ -1,0 +1,29 @@
+// Configuration
+// =======================================
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+
+  &,
+  &:before,
+  &:after {
+    box-sizing: inherit;
+  }
+
+}
+
+$sgl-debug-mode: false;
+$sgl-extras: false;
+$sgl-scale-factor: $PERFECT_FOURTH;
+
+$unit-s:    8px;
+$unit-m:    12px;
+$unit-l:    16px;
+$unit-xl:   24px;
+$unit-xxl:  28px;
+$unit-xxxl: 32px;
+
+$base-animation-timing: 0.20s;

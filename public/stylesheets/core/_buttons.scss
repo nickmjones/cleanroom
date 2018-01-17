@@ -1,0 +1,26 @@
+.btn {
+  font-size: 1rem;
+  display: inline-block;
+  padding: $unit-m $unit-xl;
+  border-radius: 4px;
+  margin-bottom: $unit-xl;
+  box-shadow: 0 2px 6px transparentize(#000, 0.7);
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 4px 8px transparentize(#000, 0.7);
+  }
+  &:active {
+    box-shadow: none;
+  }
+}
+.btn--primary {
+  background: $color-blue;
+  color: lighten($color-blue, 40%);
+  border: 2px solid transparent;
+}
+.btn--secondary {
+  background: #fff;
+  color: #444;
+  border: 2px solid #d7d7d7;
+}

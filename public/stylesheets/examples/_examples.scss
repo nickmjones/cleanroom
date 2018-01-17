@@ -49,3 +49,39 @@
   color: #fff;
   font-family: monospace;
 }
+.page {
+  display: flex;
+}
+.filter-bar {
+  flex: 1 1 0;
+}
+.filter-bar ul {
+  list-style: none;
+}
+.filter-bar ul li {
+  border: 1px solid #d7d7d7;
+  border-bottom: 0;
+  padding: $unit-s;
+}
+.filter-bar ul li:last-of-type {
+  border-bottom: 1px solid #d7d7d7;
+}
+.right-column {
+  flex: 5 1 0;
+}
+
+header, footer {
+  padding: $unit-xl;
+}
+header {
+  background: $color-red;
+}
+footer {
+  border-top: 1px solid #efefef;
+}
+
+section h2.upcase {
+  color: #777;
+  font-size: 1rem;
+  text-transform: uppercase;
+}

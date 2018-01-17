@@ -3,13 +3,3 @@ section {
   padding: $unit-xl;
   @include tentacles-clearfix;
 }
-
-header, footer {
-  padding: $unit-xl;
-}
-header {
-  background: $color-red;
-}
-footer {
-  background: $color-gray;
-}

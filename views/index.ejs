@@ -14,90 +14,102 @@
   </head>
   <body>
     <% include shared/header %>
+    <div class="page">
+      <aside class="filter-bar">
+        <ul>
+          <li>Type</li>
+          <li>Colors</li>
+          <li>Buttons</li>
+        </ul>
+      </aside>
 
-    <section class="type">
-      <h1>Header 1</h1>
-      <h2>Header 2</h2>
-      <h3>Header 3</h3>
-      <h4>Header 4</h4>
-    </section>
+      <div class="right-column">
+        <section class="type">
+          <h2 class="upcase">Type</h2>
+          <h1>Header 1</h1>
+          <h2>Header 2</h2>
+          <h3>Header 3</h3>
+          <h4>Header 4</h4>
+        </section>
 
-    <section class="text">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nobis temporibus explicabo unde illo similique iste eligendi obcaecati officiis a iusto aliquid numquam nisi perferendis cum earum, tempora molestias, excepturi!
-      </p>
-    </section>
+        <section class="text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nobis temporibus explicabo unde illo similique iste eligendi obcaecati officiis a iusto aliquid numquam nisi perferendis cum earum, tempora molestias, excepturi!
+          </p>
+        </section>
 
-    <section class="colors">
-      <h2>Colors</h2>
+        <section class="colors">
+          <h2 class="upcase">Colors</h2>
 
-      <!-- colors -->
-      <figure class="swatch swatch--red">
-        <ul>
-          <li class="var">$color-red</li>
-          <li>#fa3c00</li>
-        </ul>
-      </figure>
-      <figure class="swatch swatch--blue">
-        <ul>
-          <li class="var">$color-blue</li>
-          <li>#1e39d2</li>
-        </ul>
-      </figure>
-      <figure class="swatch swatch--purple">
-        <ul>
-          <li class="var">$color-purple</li>
-          <li>#a639b2</li>
-        </ul>
-      </figure>
-      <figure class="swatch swatch--yellow">
-        <ul>
-          <li class="var">$color-yellow</li>
-          <li>#ffdc1e</li>
-        </ul>
-      </figure>
-      <figure class="swatch swatch--teal">
-        <ul>
-          <li class="var">$color-teal</li>
-          <li>#5ccfc2</li>
-        </ul>
-      </figure>
-      <figure class="swatch swatch--gray">
-        <ul>
-          <li class="var">$color-gray</li>
-          <li>#939393</li>
-        </ul>
-      </figure>
+          <!-- colors -->
+          <figure class="swatch swatch--red">
+            <ul>
+              <li class="var">$color-red</li>
+              <li>#fa3c00</li>
+            </ul>
+          </figure>
+          <figure class="swatch swatch--blue">
+            <ul>
+              <li class="var">$color-blue</li>
+              <li>#1e39d2</li>
+            </ul>
+          </figure>
+          <figure class="swatch swatch--purple">
+            <ul>
+              <li class="var">$color-purple</li>
+              <li>#a639b2</li>
+            </ul>
+          </figure>
+          <figure class="swatch swatch--yellow">
+            <ul>
+              <li class="var">$color-yellow</li>
+              <li>#ffdc1e</li>
+            </ul>
+          </figure>
+          <figure class="swatch swatch--teal">
+            <ul>
+              <li class="var">$color-teal</li>
+              <li>#5ccfc2</li>
+            </ul>
+          </figure>
+          <figure class="swatch swatch--gray">
+            <ul>
+              <li class="var">$color-gray</li>
+              <li>#939393</li>
+            </ul>
+          </figure>
 
-    </br>
+        </br>
 
-      <!-- states -->
-      <figure class="swatch swatch--warn">
-        <ul>
-          <li class="var">$color-warn</li>
-          <li>#23b268</li>
-        </ul>
-      </figure>
-      <figure class="swatch swatch--error">
-        <ul>
-          <li class="var">$color-error</li>
-          <li>#23b268</li>
-        </ul>
-      </figure>
-      <figure class="swatch swatch--success">
-        <ul>
-          <li class="var">$color-success</li>
-          <li>#23b268</li>
-        </ul>
-      </figure>
-    </section>
+          <!-- states -->
+          <figure class="swatch swatch--warn">
+            <ul>
+              <li class="var">$color-warn</li>
+              <li>#23b268</li>
+            </ul>
+          </figure>
+          <figure class="swatch swatch--error">
+            <ul>
+              <li class="var">$color-error</li>
+              <li>#23b268</li>
+            </ul>
+          </figure>
+          <figure class="swatch swatch--success">
+            <ul>
+              <li class="var">$color-success</li>
+              <li>#23b268</li>
+            </ul>
+          </figure>
+        </section>
 
-    <section class="buttons">
-      <h2>Buttons &amp; Links</h2>
-      <div class="btn btn--primary">Primary Button</div>
-      <div class="btn btn--secondary">Secondary Button</div>
-      <a href="#">I am a link.</a>
-    </section>
+        <section class="buttons">
+          <h2 class="upcase">Buttons &amp; Links</h2>
+          <div class="btn btn--primary">Primary Button</div>
+          <div class="btn btn--secondary">Secondary Button</div>
+          <a href="#">I am a link.</a>
+        </section>
+      </div>
+    </div>
 
     <% include shared/footer %>
   </body>

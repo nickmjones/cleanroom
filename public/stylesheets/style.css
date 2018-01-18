@@ -101,7 +101,8 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "SharpSans", Helvetica, Arial, sans-serif;
-  margin-bottom: 8px; }
+  margin: 1.414rem 0 0.5rem;
+  line-height: 1.2; }
 
 h1 {
   font-size: 2.48832em; }
@@ -123,16 +124,17 @@ h6 {
 
 p {
   font-size: 1em;
-  line-height: 1.37; }
+  margin-bottom: 1rem; }
 
 body {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
-  color: #444; }
+  color: #444;
+  line-height: 1.45; }
 
 .btn {
   font-size: 1rem;
   display: inline-block;
-  padding: 12px 24px;
+  padding: 8px 24px;
   border-radius: 4px;
   margin-bottom: 24px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
@@ -153,6 +155,10 @@ input[type='submit'].btn--primary {
   background: #3626A7;
   color: #b5adec;
   border: 2px solid transparent; }
+  .btn--primary:hover,
+  a.btn--primary:hover,
+  input[type='submit'].btn--primary:hover {
+    background: #221869; }
 
 .btn--secondary,
 a.btn--secondary,
@@ -160,6 +166,10 @@ input[type='submit'].btn--secondary {
   background: #fff;
   color: #444;
   border: 2px solid #d7d7d7; }
+  .btn--secondary:hover,
+  a.btn--secondary:hover,
+  input[type='submit'].btn--secondary:hover {
+    background: #efefef; }
 
 section {
   border-bottom: 1px solid #939393;
@@ -188,7 +198,8 @@ textarea {
   border-bottom: 1px solid #d7d7d7;
   width: 75%;
   background: #efefef;
-  font-size: modular-scale(1);
+  font-size: 1em;
+  font-family: "SharpSans", Helvetica, Arial, sans-serif;
   transition: all 0.15s ease-in-out; }
   ::-webkit-input-placeholder {
     color: #888; }
@@ -269,32 +280,27 @@ textarea:focus {
 
 .filter-bar {
   flex: 1 1 0;
-  padding: 8px; }
+  padding: 8px;
+  background: rgba(154, 210, 203, 0.2); }
 
 .filter-bar ul {
   list-style: none; }
 
 .filter-bar ul li {
-  border: 1px solid #d7d7d7;
   border-bottom: 0;
-  padding: 8px; }
-
-.filter-bar ul li:last-of-type {
-  border-bottom: 1px solid #d7d7d7; }
+  padding: 4px;
+  font-size: 0.73rem; }
 
 .right-column {
-  flex: 5 1 0; }
-
-header, footer {
-  padding: 24px; }
+  flex: 5 1 0;
+  padding: 0 24px; }
 
 header {
   background: #efefef;
-  margin-bottom: 24px; }
+  padding: 48px; }
 
 footer {
-  border-top: 1px solid #efefef;
-  margin-top: 24px;
+  padding: 24px;
   font-size: 0.75rem; }
 
 section h2.upcase {

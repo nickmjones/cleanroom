@@ -23,7 +23,8 @@ textarea {
   border-bottom: 1px solid #d7d7d7;
   width: 75%;
   background: #efefef;
-  font-size: modular-scale(1);
+  font-size: ms(0);
+  font-family: $body-font;
   transition: all 0.15s ease-in-out;
   @include tentacles-placeholder {
     color: #888;

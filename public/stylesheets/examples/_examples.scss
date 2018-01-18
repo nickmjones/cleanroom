@@ -55,32 +55,27 @@
 .filter-bar {
   flex: 1 1 0;
   padding: $unit-s;
+  background: transparentize($color-teal, 0.8);
 }
 .filter-bar ul {
   list-style: none;
 }
 .filter-bar ul li {
-  border: 1px solid #d7d7d7;
   border-bottom: 0;
-  padding: $unit-s;
-}
-.filter-bar ul li:last-of-type {
-  border-bottom: 1px solid #d7d7d7;
+  padding: $unit-s/2;
+  font-size: 0.73rem;
 }
 .right-column {
   flex: 5 1 0;
+  padding: 0 $unit-xl;
 }
 
-header, footer {
-  padding: $unit-xl;
-}
 header {
   background: #efefef;
-  margin-bottom: $unit-xl;
+  padding: $unit-xl*2;
 }
 footer {
-  border-top: 1px solid #efefef;
-  margin-top: $unit-xl;
+  padding: $unit-xl;
   font-size: 0.75rem;
 }
 

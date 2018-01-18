@@ -5,7 +5,7 @@
 .btn {
   font-size: 1rem;
   display: inline-block;
-  padding: $unit-m $unit-xl;
+  padding: $unit-s $unit-xl;
   border-radius: 4px;
   margin-bottom: $unit-xl;
   box-shadow: 0 2px 6px transparentize(#000, 0.7);
@@ -32,6 +32,9 @@ input[type='submit'].btn--primary {
   background: $color-blue;
   color: lighten($color-blue, 40%);
   border: 2px solid transparent;
+  &:hover {
+    background: darken($color-blue, 15%);
+  }
 }
 
 .btn--secondary,
@@ -40,4 +43,7 @@ input[type='submit'].btn--secondary {
   background: #fff;
   color: #444;
   border: 2px solid #d7d7d7;
+  &:hover {
+    background: #efefef;
+  }
 }

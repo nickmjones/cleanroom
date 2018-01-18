@@ -25,9 +25,10 @@ a:hover {
   text-decoration: underline;
 }
 
-$sgl-debug-mode: false;
-$sgl-extras: false;
-$sgl-scale-factor: $PERFECT_FOURTH;
+$modularscale: (
+  base: 1em,
+  ratio: $minor-third
+);
 
 $unit-s:    8px;
 $unit-m:    12px;

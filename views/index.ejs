@@ -20,6 +20,7 @@
           <li>Type</li>
           <li>Colors</li>
           <li>Buttons</li>
+          <li>Forms</li>
         </ul>
       </aside>
 
@@ -30,9 +31,7 @@
           <h2>Header 2</h2>
           <h3>Header 3</h3>
           <h4>Header 4</h4>
-        </section>
 
-        <section class="text">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nobis temporibus explicabo unde illo similique iste eligendi obcaecati officiis a iusto aliquid numquam nisi perferendis cum earum, tempora molestias, excepturi!
           </p>
@@ -106,8 +105,66 @@
           <h2 class="upcase">Buttons &amp; Links</h2>
           <div class="btn btn--primary">Primary Button</div>
           <div class="btn btn--secondary">Secondary Button</div>
-          <a href="#">I am a link.</a>
+          <a href="/some/path" class="btn btn--primary">Link as Button</a>
+          <a href="/some/path" class="btn btn--secondary">Link as Button</a>
+          <a href="/some/path">I am a link.</a>
+          <script src="https://gist.github.com/nickmjones/8f1718c2e6d4d994c4b9a253a17de4c0.js"></script>
         </section>
+
+
+        <section class="forms">
+          <h2 class="upcase">Forms</h2>
+          <h2 class="upcase">Base Presentation</h2>
+
+          <form name="foo" class="userform">
+            <label for="full_name">Full Name</label>
+            <input type="text" placeholder="Full Name" id="full_name">
+
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" id="password">
+
+            <label for="comments">Comments</label>
+            <textarea id="comments" rows="10" placeholder="Your comments"></textarea>
+
+            <input type="submit" class="btn btn--primary" value="Send">
+            <input type="submit" class="btn btn--secondary" value="Reset">
+          </form>
+
+          <script src="https://gist.github.com/nickmjones/c51abf4a4f7578df57b9b9fb9f42bbdd.js"></script>
+
+          <h2 class="upcase">Presentation with Errors</h2>
+          <form name="foo" class="userform userform--withErrors">
+            <label for="full_name">Full Name</label>
+            <input type="text" placeholder="Full Name" id="full_name">
+
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" id="password">
+
+            <label for="comments">Comments</label>
+            <textarea id="comments" rows="10" placeholder="Your comments"></textarea>
+
+            <input type="submit" class="btn btn--primary" value="Send">
+            <input type="submit" class="btn btn--secondary" value="Reset">
+          </form>
+
+          <h2 class="upcase">Disabled Presentation</h2>
+          <form name="foo" class="userform userform--isDisabled">
+            <label for="full_name">Full Name</label>
+            <input type="text" placeholder="Full Name" id="full_name">
+
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" id="password">
+
+            <label for="comments">Comments</label>
+            <textarea id="comments" rows="10" placeholder="Your comments"></textarea>
+
+            <input type="submit" class="btn btn--primary" value="Send">
+            <input type="submit" class="btn btn--secondary" value="Reset">
+          </form>
+
+
+        </section>
+
       </div>
     </div>
 

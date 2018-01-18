@@ -54,6 +54,7 @@
 }
 .filter-bar {
   flex: 1 1 0;
+  padding: $unit-s;
 }
 .filter-bar ul {
   list-style: none;
@@ -74,10 +75,13 @@ header, footer {
   padding: $unit-xl;
 }
 header {
-  background: $color-red;
+  background: #efefef;
+  margin-bottom: $unit-xl;
 }
 footer {
   border-top: 1px solid #efefef;
+  margin-top: $unit-xl;
+  font-size: 0.75rem;
 }
 
 section h2.upcase {

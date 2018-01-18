@@ -1,3 +1,7 @@
+// Buttons
+//======================================
+// Base button class
+
 .btn {
   font-size: 1rem;
   display: inline-block;
@@ -7,19 +11,32 @@
   box-shadow: 0 2px 6px transparentize(#000, 0.7);
   transition: all 0.15s ease-in-out;
   cursor: pointer;
+  font-family: $body-font;
   &:hover {
     box-shadow: 0 4px 8px transparentize(#000, 0.7);
+    text-decoration: none;
   }
   &:active {
     box-shadow: none;
   }
+
+  a {
+    text-decoration: none;
+  }
 }
-.btn--primary {
+
+// button modifiers
+.btn--primary,
+a.btn--primary,
+input[type='submit'].btn--primary {
   background: $color-blue;
   color: lighten($color-blue, 40%);
   border: 2px solid transparent;
 }
-.btn--secondary {
+
+.btn--secondary,
+a.btn--secondary,
+input[type='submit'].btn--secondary {
   background: #fff;
   color: #444;
   border: 2px solid #d7d7d7;

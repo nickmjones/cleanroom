@@ -19,6 +19,7 @@ a {
   color: $color-action;
   text-decoration: none;
 }
+
 a:hover {
   color: darken($color-action, 20%);
   text-decoration: underline;
@@ -36,3 +37,11 @@ $unit-xxl:  28px;
 $unit-xxxl: 32px;
 
 $base-animation-timing: 0.20s;
+$base-border-radius: 4px;
+$base-font-size: 1rem/16px;
+$font-size-0: $base-font-size;
+$font-size-1: 21.328px;
+$font-size-2: 28.43px;
+$font-size-3: 37.897px;
+$font-size-4: 50.517px;
+$font-size-5: 67.34px;

@@ -2,20 +2,35 @@
 // =======================================
 
 .message {
-}
-.message h3 {
+  border-radius: $base-border-radius;
   padding: $unit-m;
+  margin-bottom: $unit-m;
 }
-.message--success {}
-.message--success h3 {
-  background: $color-success;
+.message p {
+  margin: 0;
+  font-size: ms(-1);
+}
+.message--success {color: $color-success; border: 1px solid $color-success}
+.message--warn {color: $color-warn; border: 1px solid $color-warn}
+.message--error {color: $color-error; border: 1px solid $color-error}
+.message--announce {color: $color-blue; border: 1px solid $color-blue}
+
+.message--success-filled {
+  background-color: $color-success;
+  color: #fff;
 }
 
-.message--warn {}
-.message--warn h3 {
-  background: $color-warn
+.message--warn-filled {
+  background-color: $color-warn;
+  color: #fff;
 }
-.message--error {}
-.message--error h3 {
-  background: $color-error;
+
+.message--error-filled {
+  background-color: $color-error;
+  color: #fff;
+}
+
+.message--announce-filled {
+  background-color: $color-blue;
+  color: #fff;
 }

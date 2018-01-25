@@ -235,17 +235,46 @@ textarea:focus {
   pointer-events: none;
   user-select: none; }
 
-.message h3 {
-  padding: 12px; }
+.message {
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 12px; }
 
-.message--success h3 {
-  background: #23b268; }
+.message p {
+  margin: 0;
+  font-size: 0.83333em; }
 
-.message--warn h3 {
-  background: #FF9F1C; }
+.message--success {
+  color: #23b268;
+  border: 1px solid #23b268; }
 
-.message--error h3 {
-  background: #710000; }
+.message--warn {
+  color: #FF9F1C;
+  border: 1px solid #FF9F1C; }
+
+.message--error {
+  color: #F95E5B;
+  border: 1px solid #F95E5B; }
+
+.message--announce {
+  color: #3626A7;
+  border: 1px solid #3626A7; }
+
+.message--success-filled {
+  background-color: #23b268;
+  color: #fff; }
+
+.message--warn-filled {
+  background-color: #FF9F1C;
+  color: #fff; }
+
+.message--error-filled {
+  background-color: #F95E5B;
+  color: #fff; }
+
+.message--announce-filled {
+  background-color: #3626A7;
+  color: #fff; }
 
 .swatch {
   border: 1px solid #d7d7d7;
@@ -283,7 +312,7 @@ textarea:focus {
   background: #23b268; }
 
 .swatch--error {
-  background: #710000; }
+  background: #F95E5B; }
 
 .swatch ul {
   list-style: none; }

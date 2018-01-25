@@ -124,12 +124,24 @@ h6 {
 
 p {
   font-size: 1em;
-  margin-bottom: 1rem; }
+  margin: 1.414rem 0 0.5rem; }
+  p.legal {
+    font-size: 0.83333em;
+    margin: 1.414rem 0 0.5rem; }
 
 body {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
   color: #444;
   line-height: 1.45; }
+
+ul.lined li {
+  list-style: none; }
+
+ul.lined li:before {
+  content: "- "; }
+
+ul.dotted li {
+  list-style: disc; }
 
 .btn {
   font-size: 1rem;
@@ -153,7 +165,7 @@ body {
 a.btn--primary,
 input[type='submit'].btn--primary {
   background: #3626A7;
-  color: #b5adec;
+  color: #fff;
   border: 2px solid transparent; }
   .btn--primary:hover,
   a.btn--primary:hover,
@@ -165,11 +177,7 @@ a.btn--secondary,
 input[type='submit'].btn--secondary {
   background: #fff;
   color: #444;
-  border: 2px solid #d7d7d7; }
-  .btn--secondary:hover,
-  a.btn--secondary:hover,
-  input[type='submit'].btn--secondary:hover {
-    background: #efefef; }
+  border: 2px solid #3626A7; }
 
 section {
   border-bottom: 1px solid #939393;
@@ -201,13 +209,13 @@ textarea {
   font-size: 1em;
   font-family: "SharpSans", Helvetica, Arial, sans-serif;
   transition: all 0.15s ease-in-out; }
-  ::-webkit-input-placeholder {
+  input:not([type='submit'])::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     color: #888; }
-  :-moz-placeholder {
+  input:not([type='submit']):-moz-placeholder, textarea:-moz-placeholder {
     color: #888; }
-  ::-moz-placeholder {
+  input:not([type='submit'])::-moz-placeholder, textarea::-moz-placeholder {
     color: #888; }
-  :-ms-input-placeholder {
+  input:not([type='submit']):-ms-input-placeholder, textarea:-ms-input-placeholder {
     color: #888; }
 
 input:not([type='submit']):focus,
@@ -226,6 +234,18 @@ textarea:focus {
   opacity: 0.5;
   pointer-events: none;
   user-select: none; }
+
+.message h3 {
+  padding: 12px; }
+
+.message--success h3 {
+  background: #23b268; }
+
+.message--warn h3 {
+  background: #FF9F1C; }
+
+.message--error h3 {
+  background: #710000; }
 
 .swatch {
   border: 1px solid #d7d7d7;

@@ -85,11 +85,30 @@ h6 {
 
 p {
   font-size: ms(0);
-  margin-bottom: 1rem;
+  margin: 1.414rem 0 0.5rem;
+
+  &.legal {
+    font-size: ms(-1);
+    margin: 1.414rem 0 0.5rem;
+  }  
 }
+
 
 body {
   font-family: $example-font;
   color: #444;
   line-height: 1.45;
+}
+
+// Lists
+// =======================================
+
+ul.lined li {
+  list-style: none;
+}
+ul.lined li:before {
+  content: "- ";
+}
+ul.dotted li {
+  list-style: disc;
 }

@@ -1,0 +1,21 @@
+// Alerts
+// =======================================
+
+.message {
+}
+.message h3 {
+  padding: $unit-m;
+}
+.message--success {}
+.message--success h3 {
+  background: $color-success;
+}
+
+.message--warn {}
+.message--warn h3 {
+  background: $color-warn
+}
+.message--error {}
+.message--error h3 {
+  background: $color-error;
+}

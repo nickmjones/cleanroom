@@ -30,20 +30,22 @@
 a.btn--primary,
 input[type='submit'].btn--primary {
   background: $color-blue;
-  color: lighten($color-blue, 40%);
+  color: #fff;
   border: 2px solid transparent;
   &:hover {
     background: darken($color-blue, 15%);
   }
 }
 
+// TODO: Add deactivated state for buttons
+
 .btn--secondary,
 a.btn--secondary,
 input[type='submit'].btn--secondary {
   background: #fff;
   color: #444;
-  border: 2px solid #d7d7d7;
+  border: 2px solid $color-blue;
   &:hover {
-    background: #efefef;
+    //background: #efefef;
   }
 }

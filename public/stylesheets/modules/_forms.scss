@@ -41,7 +41,7 @@ textarea:focus {
 .userform--withErrors {
   input:not([type='submit']),
   textarea {
-    border: 1px solid $color-warn;
+    border: 1px solid $color-error;
     background: #fff;
   }
 }

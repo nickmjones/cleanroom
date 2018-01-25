@@ -44,11 +44,11 @@ html {
   box-sizing: inherit; }
 
 a {
-  color: #3626A7;
+  color: #1e39d2;
   text-decoration: none; }
 
 a:hover {
-  color: #1b1354;
+  color: #112179;
   text-decoration: underline; }
 
 @font-face {
@@ -164,20 +164,20 @@ ul.dotted li {
 .btn--primary,
 a.btn--primary,
 input[type='submit'].btn--primary {
-  background: #3626A7;
+  background: #1e39d2;
   color: #fff;
   border: 2px solid transparent; }
   .btn--primary:hover,
   a.btn--primary:hover,
   input[type='submit'].btn--primary:hover {
-    background: #221869; }
+    background: #14278f; }
 
 .btn--secondary,
 a.btn--secondary,
 input[type='submit'].btn--secondary {
   background: #fff;
   color: #444;
-  border: 2px solid #3626A7; }
+  border: 2px solid #1e39d2; }
 
 section {
   border-bottom: 1px solid #939393;
@@ -223,11 +223,11 @@ textarea:focus {
   outline: none;
   background: #fff;
   border: 1px solid #d7d7d7;
-  border-bottom: 1px solid #3626A7; }
+  border-bottom: 1px solid #1e39d2; }
 
 .userform--withErrors input:not([type='submit']),
 .userform--withErrors textarea {
-  border: 1px solid #FF9F1C;
+  border: 1px solid #F95E5B;
   background: #fff; }
 
 .userform--isDisabled * {
@@ -257,8 +257,8 @@ textarea:focus {
   border: 1px solid #F95E5B; }
 
 .message--announce {
-  color: #3626A7;
-  border: 1px solid #3626A7; }
+  color: #1e39d2;
+  border: 1px solid #1e39d2; }
 
 .message--success-filled {
   background-color: #23b268;
@@ -273,7 +273,7 @@ textarea:focus {
   color: #fff; }
 
 .message--announce-filled {
-  background-color: #3626A7;
+  background-color: #1e39d2;
   color: #fff; }
 
 .swatch {
@@ -291,13 +291,13 @@ textarea:focus {
   background: #fa3c00; }
 
 .swatch--yellow {
-  background: #F3B700; }
+  background: #ffdc1e; }
 
 .swatch--blue {
-  background: #3626A7; }
+  background: #1e39d2; }
 
 .swatch--teal {
-  background: #9AD2CB; }
+  background: #5ccfc2; }
 
 .swatch--purple {
   background: #a639b2; }
@@ -330,7 +330,7 @@ textarea:focus {
 .filter-bar {
   flex: 1 1 0;
   padding: 8px;
-  background: rgba(154, 210, 203, 0.2); }
+  background: rgba(92, 207, 194, 0.2); }
 
 .filter-bar ul {
   list-style: none; }

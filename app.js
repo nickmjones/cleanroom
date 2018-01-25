@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 var sassMiddleware = require('node-sass-middleware');
 
 var index = require('./routes/index');
-var users = require('./routes/users');
+var example = require('./routes/example');
 
 var app = express();
 
@@ -30,7 +30,7 @@ app.use(sassMiddleware({
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
-app.use('/users', users);
+app.use('/example', example)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -49,7 +49,5 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-
-app.use(require("better-express-errors")(app))
 
 module.exports = app;

@@ -57,7 +57,7 @@ $body-font: 'SharpSans', Helvetica, Arial, sans-serif;
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $header-font;
-  margin: 1.414rem 0 0.5rem;
+  margin: 1.414rem 0 0.75rem;
   line-height: 1.2;
 }
 
@@ -90,7 +90,11 @@ p {
   &.legal {
     font-size: ms(-1);
     margin: 1.414rem 0 0.5rem;
-  }  
+  }
+}
+
+hr {
+  margin-bottom: $unit-xl;
 }
 
 

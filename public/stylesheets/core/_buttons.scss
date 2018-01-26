@@ -29,7 +29,7 @@
 .btn--primary,
 a.btn--primary,
 input[type='submit'].btn--primary {
-  background: $color-blue;
+  background: $color-action;
   color: #fff;
   border: 2px solid transparent;
   &:hover {
@@ -43,8 +43,8 @@ input[type='submit'].btn--primary {
 a.btn--secondary,
 input[type='submit'].btn--secondary {
   background: #fff;
-  color: #444;
-  border: 2px solid $color-blue;
+  color: $color-action;
+  border: 2px solid $color-action;
   &:hover {
     //background: #efefef;
   }

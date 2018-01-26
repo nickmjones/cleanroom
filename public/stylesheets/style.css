@@ -409,12 +409,14 @@ footer {
   font-family: monospace;
   border-radius: 5px; }
 
+p.annotation {
+  color: #0072ac;
+  margin: 0 0 16px;
+  font-family: monospace; }
+
 table.example-type-specimen {
   width: 100%; }
   table.example-type-specimen h1, table.example-type-specimen h2, table.example-type-specimen h3, table.example-type-specimen h4, table.example-type-specimen h5, table.example-type-specimen h6 {
     margin: 0; }
-  table.example-type-specimen p {
-    color: #0072ac;
-    margin: 0 0 16px; }
 
 /*# sourceMappingURL=style.css.map */

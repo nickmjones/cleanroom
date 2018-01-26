@@ -136,6 +136,11 @@ footer {
   font-family: monospace;
   border-radius: 5px;
 }
+p.annotation {
+  color: #0072ac;
+  margin: 0 0 $unit-l;
+  font-family: monospace;
+}
 
 // Tables
 
@@ -144,10 +149,5 @@ table.example-type-specimen {
 
   h1, h2, h3, h4, h5, h6 {
     margin: 0;
-  }
-
-  p {
-    color: #0072ac;
-    margin: 0 0 $unit-l;
   }
 }

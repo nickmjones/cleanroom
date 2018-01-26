@@ -1,41 +1,46 @@
 // TODO: Makes the copy/pastable via JS
 .swatch {
   border: 1px solid #d7d7d7;
-  border-bottom: 1px solid #777;
-  padding: $unit-l;
   display: inline-block;
   text-align: center;
-  border-radius: 4px;
   margin: 0 $unit-l $unit-l 0;
   width: 155px;
   float: left;
 }
-.swatch--red {
+.swatch dt {
+  min-height: 100px;
+  padding-top: 25%;
+}
+.swatch dd {
+  padding: $unit-s 0;
+  color: #999;
+}
+.swatch--red dt {
   background: $color-red;
 }
-.swatch--yellow {
+.swatch--yellow dt {
   background: $color-yellow;
 }
-.swatch--blue {
+.swatch--blue dt {
   background: $color-blue;
 }
-.swatch--teal {
+.swatch--teal dt {
   background: $color-teal;
 }
-.swatch--purple {
+.swatch--purple dt {
   background: $color-purple;
 }
-.swatch--gray {
+.swatch--gray dt {
   background: $color-gray;
 }
 
-.swatch--warn {
+.swatch--warn dt {
   background: $color-warn;
 }
-.swatch--success {
+.swatch--success dt {
   background: $color-success;
 }
-.swatch--error {
+.swatch--error dt {
   background: $color-error;
 }
 
@@ -88,6 +93,17 @@
     color: #999;
   }
 }
+.filter-bar ul li ul {
+  margin: $unit-s 0 0 $unit-s;
+}
+.filter-bar ul li ul li {
+  border: 0;
+  padding: $unit-s/2 0;
+  color: #999;
+  &:after {
+    content: "";
+  }
+}
 .right-column {
   flex: 4 1 0;
   padding: 0 $unit-xl;
@@ -96,7 +112,7 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-  &.example {
+  &.example-type-specimen {
     font-family: $example-font;
     font-weight: 300;
     color: #444;
@@ -110,4 +126,29 @@ header {
 footer {
   padding: $unit-xl;
   font-size: 0.75rem;
+}
+
+.example-code {
+  color: #0072ac;
+  text-align: center;
+  border: 1px solid #d7d7d7;
+  padding: 3px 6px;
+  font-family: monospace;
+  border-radius: 5px;
+}
+
+p.annotation {
+  color: #0072ac;
+  margin: 0 0 $unit-l;
+  font-family: monospace;
+}
+
+// Tables
+
+table.example-type-specimen {
+  width: 100%;
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
 }

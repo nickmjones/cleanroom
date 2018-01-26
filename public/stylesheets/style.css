@@ -209,7 +209,7 @@ textarea {
   margin-bottom: 12px;
   border: 1px solid #fff;
   border-bottom: 1px solid #d7d7d7;
-  width: 75%;
+  width: 100%;
   background: #efefef;
   font-size: 1em;
   font-family: "SharpSans", Helvetica, Arial, sans-serif;
@@ -283,40 +283,45 @@ textarea:focus {
 
 .swatch {
   border: 1px solid #d7d7d7;
-  border-bottom: 1px solid #777;
-  padding: 16px;
   display: inline-block;
   text-align: center;
-  border-radius: 4px;
   margin: 0 16px 16px 0;
   width: 155px;
   float: left; }
 
-.swatch--red {
+.swatch dt {
+  min-height: 100px;
+  padding-top: 25%; }
+
+.swatch dd {
+  padding: 8px 0;
+  color: #999; }
+
+.swatch--red dt {
   background: #fa3c00; }
 
-.swatch--yellow {
+.swatch--yellow dt {
   background: #ffdc1e; }
 
-.swatch--blue {
+.swatch--blue dt {
   background: #1e39d2; }
 
-.swatch--teal {
+.swatch--teal dt {
   background: #5ccfc2; }
 
-.swatch--purple {
+.swatch--purple dt {
   background: #a639b2; }
 
-.swatch--gray {
+.swatch--gray dt {
   background: #939393; }
 
-.swatch--warn {
+.swatch--warn dt {
   background: #FF9F1C; }
 
-.swatch--success {
+.swatch--success dt {
   background: #23b268; }
 
-.swatch--error {
+.swatch--error dt {
   background: #F95E5B; }
 
 .swatch ul {
@@ -367,13 +372,23 @@ textarea:focus {
     transform: rotate(90deg);
     color: #999; }
 
+.filter-bar ul li ul {
+  margin: 8px 0 0 8px; }
+
+.filter-bar ul li ul li {
+  border: 0;
+  padding: 4px 0;
+  color: #999; }
+  .filter-bar ul li ul li:after {
+    content: ""; }
+
 .right-column {
   flex: 4 1 0;
   padding: 0 24px;
   background: #fff;
   border-radius: 6px; }
 
-h1.example, h2.example, h3.example, h4.example, h5.example, h6.example {
+h1.example-type-specimen, h2.example-type-specimen, h3.example-type-specimen, h4.example-type-specimen, h5.example-type-specimen, h6.example-type-specimen {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
   font-weight: 300;
   color: #444; }
@@ -385,5 +400,23 @@ header {
 footer {
   padding: 24px;
   font-size: 0.75rem; }
+
+.example-code {
+  color: #0072ac;
+  text-align: center;
+  border: 1px solid #d7d7d7;
+  padding: 3px 6px;
+  font-family: monospace;
+  border-radius: 5px; }
+
+p.annotation {
+  color: #0072ac;
+  margin: 0 0 16px;
+  font-family: monospace; }
+
+table.example-type-specimen {
+  width: 100%; }
+  table.example-type-specimen h1, table.example-type-specimen h2, table.example-type-specimen h3, table.example-type-specimen h4, table.example-type-specimen h5, table.example-type-specimen h6 {
+    margin: 0; }
 
 /*# sourceMappingURL=style.css.map */

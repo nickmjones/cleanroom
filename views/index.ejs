@@ -19,7 +19,12 @@
         <h5>Atoms</h5>
         <ul>
           <li>Typography</li>
-          <li>Colors</li>
+          <li>Colors
+            <ul>
+              <li>Primary Colors</li>
+              <li>Tints &amp; Shades</li>
+            </ul>
+          </li>
           <li>Buttons</li>
         </ul>
         <h5>Organisms</h5>
@@ -35,83 +40,98 @@
           <h1 class="example">Colors</h1>
           <hr/>
 
-          <!-- colors -->
-          <figure class="swatch swatch--red">
-            <ul>
-              <li class="var">$color-red</li>
-              <li>#fa3c00</li>
-            </ul>
-          </figure>
-          <figure class="swatch swatch--blue">
-            <ul>
-              <li class="var">$color-blue</li>
-              <li>#1e39d2</li>
-            </ul>
-          </figure>
-          <figure class="swatch swatch--purple">
-            <ul>
-              <li class="var">$color-purple</li>
-              <li>#a639b2</li>
-            </ul>
-          </figure>
-          <figure class="swatch swatch--yellow">
-            <ul>
-              <li class="var">$color-yellow</li>
-              <li>#ffdc1e</li>
-            </ul>
-          </figure>
-          <figure class="swatch swatch--teal">
-            <ul>
-              <li class="var">$color-teal</li>
-              <li>#5ccfc2</li>
-            </ul>
-          </figure>
-          <figure class="swatch swatch--gray">
-            <ul>
-              <li class="var">$color-gray</li>
-              <li>#939393</li>
-            </ul>
-          </figure>
+          <dl class="swatch swatch--red">
+            <dt class="var">$color-red</dt>
+            <dd>#fa3c00</dd>
+          </dl>
+          <dl class="swatch swatch--blue">
+            <dt class="var">$color-blue</dt>
+            <dd>#1e39d2</dd>
+          </dl>
+          <dl class="swatch swatch--purple">
+            <dt class="var">$color-purple</dt>
+            <dd>#a639b2</dd>
+          </dl>
+          <dl class="swatch swatch--yellow">
+            <dt class="var">$color-yellow</dt>
+            <dd>#ffdc1e</dd>
+          </dl>
+          <dl class="swatch swatch--teal">
+            <dt class="var">$color-teal</dt>
+            <dd>#5ccfc2</dd>
+          </dl>
+          <dl class="swatch swatch--gray">
+            <dt class="var">$color-gray</dt>
+            <dd>#939393</dd>
+          </dl>
 
           <!-- states -->
-          <figure class="swatch swatch--warn">
-            <ul>
-              <li class="var">$color-warn</li>
-              <li>#23b268</li>
-            </ul>
-          </figure>
-          <figure class="swatch swatch--error">
-            <ul>
-              <li class="var">$color-error</li>
-              <li>#23b268</li>
-            </ul>
-          </figure>
-          <figure class="swatch swatch--success">
-            <ul>
-              <li class="var">$color-success</li>
-              <li>#23b268</li>
-            </ul>
-          </figure>
+          <dl class="swatch swatch--warn">
+            <dt class="var">$color-warn</dt>
+            <dd>#23b268</dd>
+          </dl>
+          <dl class="swatch swatch--error">
+            <dt class="var">$color-error</dt>
+            <dd>#23b268</dd>
+          </dl>
+          <dl class="swatch swatch--success">
+            <dt class="var">$color-success</dt>
+            <dd>#23b268</dd>
+          </dl>
         </section>
 
         <section class="type">
           <h1 class="example">Typography</h1>
           <hr/>
 
-          <h1>Header 1 Sharp Sans</h1>
-          <h2>Header 2 Sharp Sans</h2>
-          <h3>Header 3 Sharp Sans</h3>
-          <h4>Header 4 Sharp Sans</h4>
-          <h5>Header 5 Sharp Sans</h5>
-          <h6>Header 6 Sharp Sans</h6>
+          <table class="example-type-specimen">
+            <tr>
+              <td width-"95%"><h1>Header 1 Sharp Sans</h1>
+                <p class="annotation">2.48832em/39px</p>
+              </td>
+              <td width="5%"><span class="example-code">h1</span></td>
+            </tr>
+            <tr>
+              <td><h2>Header 2 Sharp Sans</h2>
+                <p class="annotation">2.0736em/33px</p>
+              </td>
+              <td><span class="example-code">h2</span></td>
+            </tr>
+            <tr>
+              <td><h3>Header 3 Sharp Sans</h3>
+                <p class="annotation">1.728em/27px</p>
+              </td>
+              <td><span class="example-code">h3</span></td>
+            </tr>
+            <tr>
+              <td><h4>Header 4 Sharp Sans</h4>
+                <p class="annotation">1.44em/23px</p>
+              </td>
+              <td><span class="example-code">h4</span></td>
+            </tr>
+            <tr>
+              <td><h5>Header 5 Sharp Sans</h5>
+                <p class="annotation">1.2em/19px</p>
+              </td>
+              <td><span class="example-code">h5</span></td>
+            </tr>
+            <tr>
+              <td><h6>Header 6 Sharp Sans</h6>
+                <p class="annotation">1em/16px</p>
+              </td>
+              <td><span class="example-code">h6</span></td>
+            </tr>
+          </table>
 
           <p>
             At Custom Ink, we’re about more than shirts. We’re about you and everything you love. The passion you share with your group, club, or team; the excitement you have for your event or cause; and the drive that makes your business stand out from the rest. We believe that custom t-shirts do more than just make you look good - they help you feel good and inspire you to do good as well. We’re passionate about custom gear, but what we love even more is helping you bring what you love to life. So let’s create something together.
           </p>
+          <p class="annotation">1rem/16px</p>
 
           <p class="legal">
             This is small type, like lawyers use. It could be terms and conditions or other small things that are secondary to main body copy or that we wish to de-emphasize for one reason or another.
           </p>
+          <p class="annotation">0.83333em/13px</p>
 
           <ul class="lined">
             <li><em>This text is emphasized</em></li>

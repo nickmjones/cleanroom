@@ -9,3 +9,6 @@ A re-engineering of the Custom Ink design system for consistency, speed, and the
 - Full width button presentation
 - Compositional demo showing elements in context (not just the exmaple page)
 - Button paired with photo, possibly as a component
+- Grid
+- Photography/illustration
+- Icons (SVGs? Sprites?)

@@ -1,4 +1,4 @@
-![logo](https://d2ffutrenqvap3.cloudfront.net/items/2j2v01003E3r1L3u1a3v/cr_logo.png "Logo")
+![logo](https://d2ffutrenqvap3.cloudfront.net/items/352T2k1x3G343p2y0j08/cr_logo_2.png "Logo")
 
 ### This is Cleanroom
 A re-engineering of the Custom Ink design system for consistency, speed, and the modern web. Cleanroom is based on three basic principles:

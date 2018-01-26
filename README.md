@@ -1,4 +1,4 @@
-[logo]:https://d2ffutrenqvap3.cloudfront.net/items/2j2v01003E3r1L3u1a3v/cr_logo.png
+![logo](https://d2ffutrenqvap3.cloudfront.net/items/2j2v01003E3r1L3u1a3v/cr_logo.png "Logo")
 
 ### This is Cleanroom
 A re-engineering of the Custom Ink design system for consistency, speed, and the modern web.

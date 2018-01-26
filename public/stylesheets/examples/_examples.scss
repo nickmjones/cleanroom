@@ -56,7 +56,7 @@
 }
 .page {
   display: flex;
-  padding: $unit-xl*4 $unit-xl*8;
+  padding: $unit-xl*4 $unit-xl*7;
   background: #efefef;
 }
 .filter-bar {
@@ -111,7 +111,7 @@
   border-radius: 6px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
   &.example {
     font-family: $example-font;
     font-weight: 300;
@@ -149,5 +149,10 @@ table.example-type-specimen {
 
   h1, h2, h3, h4, h5, h6 {
     margin: 0;
+  }
+
+  td {
+    border-bottom: 1px solid #efefef;
+    padding-top: $unit-m;
   }
 }

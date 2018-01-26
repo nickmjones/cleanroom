@@ -6,10 +6,10 @@
 // http://www.cssmojo.com/the-very-latest-clearfix-reloaded/
 //
 // .usage {
-//   @include tentacles-clearfix();
+//   @include cr-clearfix();
 // }
 
-@mixin tentacles-clearfix() {
+@mixin cr-clearfix() {
 
   &:after {
     content: "" !important;

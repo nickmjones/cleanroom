@@ -99,7 +99,7 @@ a:hover {
   font-weight: 700;
   src: url(https://www.customink.com/assets-inkpress/style_bitz/SharpSans-BoldItalic-0000000000000000000000000000000000000001.eot?#iefix) format("embedded-opentype"), url(https://www.customink.com/assets-inkpress/style_bitz/SharpSans-BoldItalic-0000000000000000000000000000000000000001.woff2) format("woff2"), url(https://www.customink.com/assets-inkpress/style_bitz/SharpSans-BoldItalic-0000000000000000000000000000000000000001.woff) format("woff"); }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
   font-family: "SharpSans", Helvetica, Arial, sans-serif;
   margin: 1.414rem 0 0.75rem;
   line-height: 1.2; }
@@ -118,9 +118,6 @@ h4 {
 
 h5 {
   font-size: 1.2em; }
-
-h6 {
-  font-size: 1em; }
 
 p {
   font-size: 1em;
@@ -336,7 +333,7 @@ textarea:focus {
 
 .page {
   display: flex;
-  padding: 96px 192px;
+  padding: 96px 168px;
   background: #efefef; }
 
 .filter-bar {
@@ -388,7 +385,7 @@ textarea:focus {
   background: #fff;
   border-radius: 6px; }
 
-h1.example, h2.example, h3.example, h4.example, h5.example, h6.example {
+h1.example, h2.example, h3.example, h4.example, h5.example {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
   font-weight: 300;
   color: #444; }
@@ -418,5 +415,8 @@ table.example-type-specimen {
   width: 100%; }
   table.example-type-specimen h1, table.example-type-specimen h2, table.example-type-specimen h3, table.example-type-specimen h4, table.example-type-specimen h5, table.example-type-specimen h6 {
     margin: 0; }
+  table.example-type-specimen td {
+    border-bottom: 1px solid #efefef;
+    padding-top: 12px; }
 
 /*# sourceMappingURL=style.css.map */

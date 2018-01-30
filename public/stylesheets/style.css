@@ -325,26 +325,55 @@ textarea:focus {
 .swatch--error dt {
   background: #F95E5B; }
 
-.root--col-quarter h5 {
+.columns {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  margin-bottom: 8px; }
+
+.left-column {
+  width: 25%;
+  margin: 0 16px 0 0;
+  padding: 8px;
+  border-radius: 4px;
+  border-radius: 4px; }
+  .left-column:last-of-type {
+    margin-right: 0; }
+
+.right-column {
+  width: 75%;
+  margin: 0 16px 0 0;
+  padding: 8px;
+  border-radius: 4px;
+  border-radius: 4px; }
+  .right-column:last-of-type {
+    margin-right: 0; }
+
+section.example {
+  background: #fff;
+  margin-bottom: 24px;
+  border-radius: 4px; }
+
+.left-column h5 {
   font-size: 0.83333em;
   margin: 0;
   padding: 12px;
-  color: #5ccfc2;
+  color: #5ccfc2 !important;
   text-transform: uppercase;
   letter-spacing: 0.09rem; }
 
-.root--col-quarter ul {
+.left-column ul {
   list-style: none;
   margin-bottom: 12px; }
 
-.root--col-quarter ul li {
+.left-column ul li {
   border-bottom: 0;
   padding: 12px;
   font-size: 0.73rem;
   background: #fff;
   border-bottom: 1px solid #d7d7d7;
   position: relative; }
-  .root--col-quarter ul li:after {
+  .left-column ul li:after {
     content: "\005e";
     position: absolute;
     right: 12px;
@@ -352,26 +381,25 @@ textarea:focus {
     transform: rotate(90deg);
     color: #999; }
 
-.root--col-quarter ul li ul {
+.left-column ul li ul {
   margin: 8px 0 0 8px; }
 
-.root--col-quarter ul li ul li {
+.left-column ul li ul li {
   border: 0;
   padding: 4px 0;
   color: #999; }
-  .root--col-quarter ul li ul li:after {
+  .left-column ul li ul li:after {
     content: ""; }
 
 body.grid,
 body.examples {
-  background: #efefef;
-  padding: 16px; }
-  body.grid h1, body.grid h2, body.grid h3, body.grid h4, body.grid h5,
-  body.examples h1,
-  body.examples h2,
-  body.examples h3,
-  body.examples h4,
-  body.examples h5 {
+  background: #efefef; }
+  body.grid h1.example, body.grid h2.example, body.grid h3.example, body.grid h4.example, body.grid h5.example,
+  body.examples h1.example,
+  body.examples h2.example,
+  body.examples h3.example,
+  body.examples h4.example,
+  body.examples h5.example {
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
     font-weight: 300;
     color: #444; }
@@ -383,7 +411,9 @@ body.examples {
   margin-bottom: 8px; }
 
 .root--col {
-  background: #fff; }
+  background: #fff;
+  text-align: center;
+  border: 1px solid #efefef; }
   .root--col p {
     margin: 0; }
 
@@ -444,8 +474,33 @@ body.examples {
   border-radius: 4px; }
 
 header {
-  background: #efefef;
-  padding: 48px; }
+  background: #494b63;
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  margin-bottom: 8px;
+  padding: 16px; }
+
+header .logo {
+  width: 33.33333%;
+  margin: 0 16px 0 0;
+  padding: 0;
+  border-radius: 4px;
+  color: #b2b3c6; }
+  header .logo:last-of-type {
+    margin-right: 0; }
+
+header .logo h3, h5 {
+  margin: 0;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu; }
+
+header .logo h3 {
+  font-size: 1.44em;
+  margin-bottom: 4px; }
+
+header .logo h5 {
+  font-size: 1em;
+  font-weight: 300; }
 
 footer {
   padding: 24px;

@@ -2,55 +2,7 @@
 // =======================================
 // Uses https://github.com/modularscale/modularscale-sass
 
-@font-face {
-    font-family: "SharpSans";
-    font-style: normal;
-    font-weight: 100;
-    src: url(https://www.customink.com/assets-inkpress/style_bitz/SharpSans-Medium-0000000000000000000000000000000000000001.eot?#iefix) format("embedded-opentype"), url(https://www.customink.com/assets-inkpress/style_bitz/SharpSans-Medium-0000000000000000000000000000000000000001.woff2) format("woff2"), url(https://www.customink.com/assets-inkpress/style_bitz/SharpSans-Medium-0000000000000000000000000000000000000001.woff) format("woff")
-}
-@font-face {
-    font-family: "SharpSans";
-    font-style: italic;
-    font-weight: 100;
-    src: url(https://www.customink.com/assets-inkpress/style_bitz/SharpSans-MediumItalic-0000000000000000000000000000000000000001.eot?#iefix) format("embedded-opentype"), url(https://www.customink.com/assets-inkpress/style_bitz/SharpSans-MediumItalic-0000000000000000000000000000000000000001.woff2) format("woff2"), url(https://www.customink.com/assets-inkpress/style_bitz/SharpSans-MediumItalic-0000000000000000000000000000000000000001.woff) format("woff")
-}
-@font-face {
-    font-family: "SharpSans";
-    font-style: normal;
-    font-weight: normal;
-    src: url(https://www.customink.com/assets-inkpress/style_bitz/SharpSans-Medium-0000000000000000000000000000000000000001.eot?#iefix) format("embedded-opentype"), url(https://www.customink.com/assets-inkpress/style_bitz/SharpSans-Medium-0000000000000000000000000000000000000001.woff2) format("woff2"), url(https://www.customink.com/assets-inkpress/style_bitz/SharpSans-Medium-0000000000000000000000000000000000000001.woff) format("woff")
-}
-@font-face {
-    font-family: "SharpSans";
-    font-style: italic;
-    font-weight: normal;
-    src: url(https://www.customink.com/assets-inkpress/style_bitz/SharpSans-MediumItalic-0000000000000000000000000000000000000001.eot?#iefix) format("embedded-opentype"), url(https://www.customink.com/assets-inkpress/style_bitz/SharpSans-MediumItalic-0000000000000000000000000000000000000001.woff2) format("woff2"), url(https://www.customink.com/assets-inkpress/style_bitz/SharpSans-MediumItalic-0000000000000000000000000000000000000001.woff) format("woff")
-}
-@font-face {
-    font-family: "SharpSans";
-    font-style: normal;
-    font-weight: bold;
-    src: url(https://www.customink.com/assets-inkpress/style_bitz/SharpSans-Bold-0000000000000000000000000000000000000001.eot?#iefix) format("embedded-opentype"), url(https://www.customink.com/assets-inkpress/style_bitz/SharpSans-Bold-0000000000000000000000000000000000000001.woff2) format("woff2"), url(https://www.customink.com/assets-inkpress/style_bitz/SharpSans-Bold-0000000000000000000000000000000000000001.woff) format("woff")
-}
-@font-face {
-    font-family: "SharpSans";
-    font-style: italic;
-    font-weight: bold;
-    src: url(https://www.customink.com/assets-inkpress/style_bitz/SharpSans-BoldItalic-0000000000000000000000000000000000000001.eot?#iefix) format("embedded-opentype"), url(https://www.customink.com/assets-inkpress/style_bitz/SharpSans-BoldItalic-0000000000000000000000000000000000000001.woff2) format("woff2"), url(https://www.customink.com/assets-inkpress/style_bitz/SharpSans-BoldItalic-0000000000000000000000000000000000000001.woff) format("woff")
-}
-@font-face {
-    font-family: "SharpSans";
-    font-style: normal;
-    font-weight: 700;
-    src: url(https://www.customink.com/assets-inkpress/style_bitz/SharpSans-Bold-0000000000000000000000000000000000000001.eot?#iefix) format("embedded-opentype"), url(https://www.customink.com/assets-inkpress/style_bitz/SharpSans-Bold-0000000000000000000000000000000000000001.woff2) format("woff2"), url(https://www.customink.com/assets-inkpress/style_bitz/SharpSans-Bold-0000000000000000000000000000000000000001.woff) format("woff")
-}
-@font-face {
-    font-family: "SharpSans";
-    font-style: italic;
-    font-weight: 700;
-    src: url(https://www.customink.com/assets-inkpress/style_bitz/SharpSans-BoldItalic-0000000000000000000000000000000000000001.eot?#iefix) format("embedded-opentype"), url(https://www.customink.com/assets-inkpress/style_bitz/SharpSans-BoldItalic-0000000000000000000000000000000000000001.woff2) format("woff2"), url(https://www.customink.com/assets-inkpress/style_bitz/SharpSans-BoldItalic-0000000000000000000000000000000000000001.woff) format("woff")
-}
-
+@import './fonts';
 $example-font: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
 $header-font: 'SharpSans', Helvetica, Arial, sans-serif;
 $body-font: 'SharpSans', Helvetica, Arial, sans-serif;

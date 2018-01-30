@@ -1,19 +1,23 @@
-// TODO: Makes the copy/pastable via JS
+// TODO: Make this copy/pastable via JS
 .swatch {
-  border: 1px solid #d7d7d7;
   display: inline-block;
   text-align: center;
   margin: 0 $unit-l $unit-l 0;
-  width: 155px;
+  width: 183px;
   float: left;
+  font-family: monospace;
 }
 .swatch dt {
   min-height: 100px;
   padding-top: 25%;
+  margin-bottom: $unit-s;
+  border-radius: 6px;
 }
 .swatch dd {
-  padding: $unit-s 0;
+  padding: $unit-s/2 0;
   color: #999;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
 }
 .swatch--red dt {
   background: $color-red;
@@ -44,23 +48,15 @@
   background: $color-error;
 }
 
-.swatch ul {
-  list-style: none;
-}
-.swatch ul li {
-  color: transparentize(#fff, 0.3);
-}
-.swatch ul li.var {
-  color: #fff;
-  font-family: monospace;
-}
+ // base container
 .page {
   display: flex;
   padding: $unit-xl*4 $unit-xl*7;
   background: #efefef;
 }
+// left rail
 .filter-bar {
-  flex: 1 1 0;
+  flex: 2 1 0;
   background: #fff;
   margin-right: 1rem;
   border-radius: 6px;
@@ -68,7 +64,7 @@
 .filter-bar h5 {
   font-size: ms(-1);
   margin: 0;
-  padding: $unit-s;
+  padding: $unit-m;
   color: $color-teal;
   text-transform: uppercase;
   letter-spacing: 0.09rem;
@@ -79,7 +75,7 @@
 }
 .filter-bar ul li {
   border-bottom: 0;
-  padding: $unit-s;
+  padding: $unit-m;
   font-size: 0.73rem;
   background: #fff;
   border-bottom: 1px solid #d7d7d7;
@@ -87,8 +83,8 @@
   &:after {
     content: "\005e";
     position: absolute;
-    right: $unit-s;
-    top: $unit-s;
+    right: $unit-m;
+    top: $unit-m;
     transform: rotate(90deg);
     color: #999;
   }
@@ -104,11 +100,27 @@
     content: "";
   }
 }
+// right content
 .right-column {
   flex: 4 1 0;
   padding: 0 $unit-xl;
   background: #fff;
   border-radius: 6px;
+}
+
+body.grid {
+  background: #efefef;
+}
+
+.example-grid {
+  border-radius: 6px;
+  //width: 80vw;
+  //margin: auto;
+  text-align: center;
+}
+.example-grid .col {
+  background: #fff;
+  border-radius: 4px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -138,7 +150,6 @@ footer {
 }
 p.annotation {
   color: #0072ac;
-  margin: 0 0 $unit-l;
   font-family: monospace;
 }
 

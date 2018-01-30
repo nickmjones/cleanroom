@@ -30,6 +30,7 @@ $modularscale: (
   ratio: $minor-third
 );
 
+$unit-xs:   4px;
 $unit-s:    8px;
 $unit-m:    12px;
 $unit-l:    16px;
@@ -40,9 +41,10 @@ $unit-xxxl: 32px;
 $base-animation-timing: 0.20s;
 $base-border-radius: 4px;
 $base-font-size: 1rem/16px;
-$font-size-0: $base-font-size;
-$font-size-1: 21.328px;
-$font-size-2: 28.43px;
-$font-size-3: 37.897px;
-$font-size-4: 50.517px;
-$font-size-5: 67.34px;
+$font-size-0: ms(0);
+$font-size-1: ms(1);
+$font-size-2: ms(2);
+$font-size-3: ms(3);
+$font-size-4: ms(4);
+$font-size-5: ms(5);
+$font-size-6: ms(6);

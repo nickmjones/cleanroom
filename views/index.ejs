@@ -3,6 +3,7 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
       WebFontConfig = { classes: false, events: false };
@@ -15,24 +16,7 @@
   <body id="example">
     <div class="page">
       <!-- TODO: need to extract examples out into separate files -->
-      <aside class="filter-bar">
-        <h5>Atoms</h5>
-        <ul>
-          <li>Typography</li>
-          <li>Colors
-            <ul>
-              <li>Primary Colors</li>
-              <li>Tints &amp; Shades</li>
-            </ul>
-          </li>
-          <li>Buttons</li>
-        </ul>
-        <h5>Organisms</h5>
-        <ul>
-          <li>Forms</li>
-          <li>Alerts &amp; Messaging</li>
-        </ul>
-      </aside>
+      <% include shared/sidebar %>
 
       <div class="right-column">
 

@@ -1,6 +1,6 @@
-///* ========================================================================
+// =======================================
 //   #CLEARFIX
-//   ======================================================================== */
+// =======================================
 
 // Mixin to drop micro clearfix into a selector. Further reading:
 // http://www.cssmojo.com/the-very-latest-clearfix-reloaded/
@@ -19,6 +19,39 @@
 
 }
 
+// =======================================
+// Defines a parent container
+// for a flexbox grid instance
+// =======================================
+
+@mixin grid-row() {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  margin-bottom: $unit-s;
+}
+
+// =======================================
+// Defines a child element for a flexbox
+// grid parent
+// $num: the number of columns an element will span, i.e. 1 of 6
+// $count: the total number of columns in the grid instance
+// $gutter: space applied outside and to the right of elements
+// and automatically stripped from the last element
+// $align: vertical text alignment inside the element,
+// `top` be default
+// $padding: optional padding to be applied inside the element
+// =======================================
+
+@mixin col($num, $count, $gutter, $padding: 0) {
+  width: percentage($num/$count);
+  margin: 0 $gutter 0 0;
+  padding: $padding;
+  border-radius: $base-border-radius;
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
 
 // Style placeholder text with prefixes
 @mixin optional-at-root($sel) {

@@ -189,104 +189,6 @@ section {
     display: block !important;
     clear: both !important; }
 
-.grid--wrapper, .grid--wrapper-xs, .grid--wrapper-s, .grid--wrapper-m, .grid--wrapper-l {
-  display: flex;
-  flex-direction: row;
-  align-content: space-around; }
-  @media (max-width: 599px) {
-    .grid--wrapper .col__quarter, .grid--wrapper-xs .col__quarter, .grid--wrapper-s .col__quarter, .grid--wrapper-m .col__quarter, .grid--wrapper-l .col__quarter {
-      border: 1px solid red; }
-    .grid--wrapper .col__half, .grid--wrapper-xs .col__half, .grid--wrapper-s .col__half, .grid--wrapper-m .col__half, .grid--wrapper-l .col__half {
-      border: 1px solid red; }
-    .grid--wrapper .col__third, .grid--wrapper-xs .col__third, .grid--wrapper-s .col__third, .grid--wrapper-m .col__third, .grid--wrapper-l .col__third {
-      border: 1px solid red; }
-    .grid--wrapper .col__fifth, .grid--wrapper-xs .col__fifth, .grid--wrapper-s .col__fifth, .grid--wrapper-m .col__fifth, .grid--wrapper-l .col__fifth {
-      border: 1px solid red; }
-    .grid--wrapper .col__full, .grid--wrapper-xs .col__full, .grid--wrapper-s .col__full, .grid--wrapper-m .col__full, .grid--wrapper-l .col__full {
-      border: 1px solid red; } }
-  @media (min-width: 600px) {
-    .grid--wrapper .col__quarter, .grid--wrapper-xs .col__quarter, .grid--wrapper-s .col__quarter, .grid--wrapper-m .col__quarter, .grid--wrapper-l .col__quarter {
-      border: 1px solid blue; }
-    .grid--wrapper .col__half, .grid--wrapper-xs .col__half, .grid--wrapper-s .col__half, .grid--wrapper-m .col__half, .grid--wrapper-l .col__half {
-      border: 1px solid blue; }
-    .grid--wrapper .col__third, .grid--wrapper-xs .col__third, .grid--wrapper-s .col__third, .grid--wrapper-m .col__third, .grid--wrapper-l .col__third {
-      border: 1px solid blue; }
-    .grid--wrapper .col__fifth, .grid--wrapper-xs .col__fifth, .grid--wrapper-s .col__fifth, .grid--wrapper-m .col__fifth, .grid--wrapper-l .col__fifth {
-      border: 1px solid blue; }
-    .grid--wrapper .col__full, .grid--wrapper-xs .col__full, .grid--wrapper-s .col__full, .grid--wrapper-m .col__full, .grid--wrapper-l .col__full {
-      border: 1px solid blue; } }
-  @media (min-width: 900px) {
-    .grid--wrapper .col__quarter, .grid--wrapper-xs .col__quarter, .grid--wrapper-s .col__quarter, .grid--wrapper-m .col__quarter, .grid--wrapper-l .col__quarter {
-      border: 1px solid green; }
-    .grid--wrapper .col__half, .grid--wrapper-xs .col__half, .grid--wrapper-s .col__half, .grid--wrapper-m .col__half, .grid--wrapper-l .col__half {
-      border: 1px solid green; }
-    .grid--wrapper .col__third, .grid--wrapper-xs .col__third, .grid--wrapper-s .col__third, .grid--wrapper-m .col__third, .grid--wrapper-l .col__third {
-      border: 1px solid green; }
-    .grid--wrapper .col__fifth, .grid--wrapper-xs .col__fifth, .grid--wrapper-s .col__fifth, .grid--wrapper-m .col__fifth, .grid--wrapper-l .col__fifth {
-      border: 1px solid green; }
-    .grid--wrapper .col__full, .grid--wrapper-xs .col__full, .grid--wrapper-s .col__full, .grid--wrapper-m .col__full, .grid--wrapper-l .col__full {
-      border: 1px solid green; } }
-  @media (min-width: 1200px) {
-    .grid--wrapper .col__quarter, .grid--wrapper-xs .col__quarter, .grid--wrapper-s .col__quarter, .grid--wrapper-m .col__quarter, .grid--wrapper-l .col__quarter {
-      border: 1px solid purple; }
-    .grid--wrapper .col__half, .grid--wrapper-xs .col__half, .grid--wrapper-s .col__half, .grid--wrapper-m .col__half, .grid--wrapper-l .col__half {
-      border: 1px solid purple; }
-    .grid--wrapper .col__third, .grid--wrapper-xs .col__third, .grid--wrapper-s .col__third, .grid--wrapper-m .col__third, .grid--wrapper-l .col__third {
-      border: 1px solid purple; }
-    .grid--wrapper .col__fifth, .grid--wrapper-xs .col__fifth, .grid--wrapper-s .col__fifth, .grid--wrapper-m .col__fifth, .grid--wrapper-l .col__fifth {
-      border: 1px solid purple; }
-    .grid--wrapper .col__full, .grid--wrapper-xs .col__full, .grid--wrapper-s .col__full, .grid--wrapper-m .col__full, .grid--wrapper-l .col__full {
-      border: 1px solid purple; } }
-  @media (min-width: 1800px) {
-    .grid--wrapper .col__quarter, .grid--wrapper-xs .col__quarter, .grid--wrapper-s .col__quarter, .grid--wrapper-m .col__quarter, .grid--wrapper-l .col__quarter {
-      border: 1px solid tan; }
-    .grid--wrapper .col__half, .grid--wrapper-xs .col__half, .grid--wrapper-s .col__half, .grid--wrapper-m .col__half, .grid--wrapper-l .col__half {
-      border: 1px solid tan; }
-    .grid--wrapper .col__third, .grid--wrapper-xs .col__third, .grid--wrapper-s .col__third, .grid--wrapper-m .col__third, .grid--wrapper-l .col__third {
-      border: 1px solid tan; }
-    .grid--wrapper .col__fifth, .grid--wrapper-xs .col__fifth, .grid--wrapper-s .col__fifth, .grid--wrapper-m .col__fifth, .grid--wrapper-l .col__fifth {
-      border: 1px solid tan; }
-    .grid--wrapper .col__full, .grid--wrapper-xs .col__full, .grid--wrapper-s .col__full, .grid--wrapper-m .col__full, .grid--wrapper-l .col__full {
-      border: 1px solid tan; } }
-
-.grid--wrapper-xs .col {
-  margin: 0 4px 8px 0; }
-  .grid--wrapper-xs .col:last-of-type {
-    margin-right: 0; }
-
-.grid--wrapper-s .col {
-  margin: 0 8px 8px 0; }
-  .grid--wrapper-s .col:last-of-type {
-    margin-right: 0; }
-
-.grid--wrapper-m .col {
-  margin: 0 12px 8px 0; }
-  .grid--wrapper-m .col:last-of-type {
-    margin-right: 0; }
-
-.grid--wrapper-l .col {
-  margin: 0 16px 8px 0; }
-  .grid--wrapper-l .col:last-of-type {
-    margin-right: 0; }
-
-.col {
-  padding: 0; }
-
-.col__quarter {
-  width: 25%; }
-
-.col__half {
-  width: 50%; }
-
-.col__third {
-  width: 75%; }
-
-.col__fifth {
-  width: 20%; }
-
-.col__full {
-  width: 100%; }
-
 .userform {
   font-family: "SharpSans", Helvetica, Arial, sans-serif; }
 
@@ -423,18 +325,7 @@ textarea:focus {
 .swatch--error dt {
   background: #F95E5B; }
 
-.page {
-  display: flex;
-  padding: 96px 168px;
-  background: #efefef; }
-
-.filter-bar {
-  flex: 2 1 0;
-  background: #fff;
-  margin-right: 1rem;
-  border-radius: 6px; }
-
-.filter-bar h5 {
+.root--col-quarter h5 {
   font-size: 0.83333em;
   margin: 0;
   padding: 12px;
@@ -442,18 +333,18 @@ textarea:focus {
   text-transform: uppercase;
   letter-spacing: 0.09rem; }
 
-.filter-bar ul {
+.root--col-quarter ul {
   list-style: none;
   margin-bottom: 12px; }
 
-.filter-bar ul li {
+.root--col-quarter ul li {
   border-bottom: 0;
   padding: 12px;
   font-size: 0.73rem;
   background: #fff;
   border-bottom: 1px solid #d7d7d7;
   position: relative; }
-  .filter-bar ul li:after {
+  .root--col-quarter ul li:after {
     content: "\005e";
     position: absolute;
     right: 12px;
@@ -461,24 +352,88 @@ textarea:focus {
     transform: rotate(90deg);
     color: #999; }
 
-.filter-bar ul li ul {
+.root--col-quarter ul li ul {
   margin: 8px 0 0 8px; }
 
-.filter-bar ul li ul li {
+.root--col-quarter ul li ul li {
   border: 0;
   padding: 4px 0;
   color: #999; }
-  .filter-bar ul li ul li:after {
+  .root--col-quarter ul li ul li:after {
     content: ""; }
 
-.right-column {
-  flex: 4 1 0;
-  padding: 0 24px;
-  background: #fff;
-  border-radius: 6px; }
+body.grid,
+body.examples {
+  background: #efefef;
+  padding: 16px; }
+  body.grid h1, body.grid h2, body.grid h3, body.grid h4, body.grid h5,
+  body.examples h1,
+  body.examples h2,
+  body.examples h3,
+  body.examples h4,
+  body.examples h5 {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    font-weight: 300;
+    color: #444; }
 
-body.grid {
-  background: #efefef; }
+.root {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  margin-bottom: 8px; }
+
+.root--col {
+  background: #fff; }
+  .root--col p {
+    margin: 0; }
+
+.root--col-fifth {
+  width: 25%;
+  margin: 0 16px 0 0;
+  padding: 8px;
+  border-radius: 4px; }
+  .root--col-fifth:last-of-type {
+    margin-right: 0; }
+
+.root--col-quarter {
+  width: 25%;
+  margin: 0 16px 0 0;
+  padding: 8px;
+  border-radius: 4px; }
+  .root--col-quarter:last-of-type {
+    margin-right: 0; }
+
+.root--col-threequarter {
+  width: 75%;
+  margin: 0 16px 0 0;
+  padding: 8px;
+  border-radius: 4px; }
+  .root--col-threequarter:last-of-type {
+    margin-right: 0; }
+
+.root--col-third {
+  width: 33.33333%;
+  margin: 0 16px 0 0;
+  padding: 8px;
+  border-radius: 4px; }
+  .root--col-third:last-of-type {
+    margin-right: 0; }
+
+.root--col-half {
+  width: 50%;
+  margin: 0 16px 0 0;
+  padding: 8px;
+  border-radius: 4px; }
+  .root--col-half:last-of-type {
+    margin-right: 0; }
+
+.root--col-full {
+  width: 100%;
+  margin: 0 16px 0 0;
+  padding: 8px;
+  border-radius: 4px; }
+  .root--col-full:last-of-type {
+    margin-right: 0; }
 
 .example-grid {
   border-radius: 6px;
@@ -487,11 +442,6 @@ body.grid {
 .example-grid .col {
   background: #fff;
   border-radius: 4px; }
-
-h1.example, h2.example, h3.example, h4.example, h5.example {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
-  font-weight: 300;
-  color: #444; }
 
 header {
   background: #efefef;

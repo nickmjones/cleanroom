@@ -48,20 +48,7 @@
   background: $color-error;
 }
 
- // base container
-.page {
-  display: flex;
-  padding: $unit-xl*4 $unit-xl*7;
-  background: #efefef;
-}
-// left rail
-.filter-bar {
-  flex: 2 1 0;
-  background: #fff;
-  margin-right: 1rem;
-  border-radius: 6px;
-}
-.filter-bar h5 {
+.root--col-quarter h5 {
   font-size: ms(-1);
   margin: 0;
   padding: $unit-m;
@@ -69,11 +56,11 @@
   text-transform: uppercase;
   letter-spacing: 0.09rem;
 }
-.filter-bar ul {
+.root--col-quarter ul {
   list-style: none;
   margin-bottom: $unit-m;
 }
-.filter-bar ul li {
+.root--col-quarter ul li {
   border-bottom: 0;
   padding: $unit-m;
   font-size: 0.73rem;
@@ -89,10 +76,10 @@
     color: #999;
   }
 }
-.filter-bar ul li ul {
+.root--col-quarter ul li ul {
   margin: $unit-s 0 0 $unit-s;
 }
-.filter-bar ul li ul li {
+.root--col-quarter ul li ul li {
   border: 0;
   padding: $unit-s/2 0;
   color: #999;
@@ -100,16 +87,46 @@
     content: "";
   }
 }
-// right content
-.right-column {
-  flex: 4 1 0;
-  padding: 0 $unit-xl;
-  background: #fff;
-  border-radius: 6px;
+
+body.grid,
+body.examples {
+  background: #efefef;
+  padding: $unit-l;
+  h1, h2, h3, h4, h5 {
+    font-family: $example-font;
+    font-weight: 300;
+    color: #444;
+  }
 }
 
-body.grid {
-  background: #efefef;
+// example grid
+
+.root {
+  @include grid-row;
+}
+.root--col {
+  background: #fff;
+  p {
+    margin: 0;
+  }
+}
+.root--col-fifth {
+  @include col(3, 12, $unit-l, $unit-s);
+}
+.root--col-quarter {
+  @include col(3, 12, $unit-l, $unit-s);
+}
+.root--col-threequarter {
+  @include col(9, 12, $unit-l, $unit-s);
+}
+.root--col-third {
+  @include col(4, 12, $unit-l, $unit-s);
+}
+.root--col-half {
+  @include col(6, 12, $unit-l, $unit-s);
+}
+.root--col-full {
+  @include col(12, 12, $unit-l, $unit-s);
 }
 
 .example-grid {
@@ -121,14 +138,6 @@ body.grid {
 .example-grid .col {
   background: #fff;
   border-radius: 4px;
-}
-
-h1, h2, h3, h4, h5 {
-  &.example {
-    font-family: $example-font;
-    font-weight: 300;
-    color: #444;
-  }
 }
 
 header {

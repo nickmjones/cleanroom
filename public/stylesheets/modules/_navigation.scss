@@ -67,7 +67,7 @@
 .linklist--inline {
   @include grid-row;
   list-style: none;
-  border-bottom: 1px solid $color-lt-gray;
+  margin: 0;
 }
 .linklist--inline__item {
   @include col(2, 12, 0, 0);
@@ -75,10 +75,11 @@
   text-align: center;
   padding-bottom: $unit-s;
   transition: all 0.20s ease-in-out;
+  border-bottom: 3px solid transparent;
 }
 .linklist--inline__item:hover,
 .linklist--inline__item--current {
   color: $color-red;
-  border-bottom: 1px solid red;
+  border-bottom: 3px solid red;
   cursor: pointer;
 }

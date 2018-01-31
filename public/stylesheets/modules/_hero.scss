@@ -1,0 +1,17 @@
+// Hero
+// =======================================
+
+.hero {
+  display: block;
+  @include grid-row;
+  overflow: hidden;
+}
+.hero--15vw {
+  height: 15vw;
+}
+.hero--25vw {
+  height: 25vw;
+}
+.hero--35vw {
+  height: 25vw;
+}

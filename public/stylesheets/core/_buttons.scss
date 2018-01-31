@@ -49,3 +49,23 @@ input[type='submit'].btn--secondary {
     //background: #efefef;
   }
 }
+
+// wide buttons
+
+.btn--primary-wide,
+a.btn--primary-wide,
+input[type='submit'].btn--primary-wide {
+  @extend .btn--primary;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.btn--secondary-wide,
+a.btn--secondary-wide,
+input[type='submit'].btn--secondary-wide {
+  @extend .btn--secondary;
+  display: block;
+  width: 100%;
+  text-align: center;
+}

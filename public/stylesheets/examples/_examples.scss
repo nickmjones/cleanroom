@@ -187,6 +187,8 @@ header .logo h5 {
   font-weight: 300;
 }
 footer {
+  background: $color-kind-blue;
+  color: lighten($color-kind-blue, 40%);
   padding: $unit-xl;
   font-size: 0.75rem;
 }

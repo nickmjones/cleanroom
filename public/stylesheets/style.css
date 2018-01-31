@@ -164,23 +164,48 @@ ul.dotted li {
   .btn a {
     text-decoration: none; }
 
-.btn--primary,
+.btn--primary, .btn--primary-wide,
+a.btn--primary-wide,
+input[type='submit'].btn--primary-wide,
 a.btn--primary,
-input[type='submit'].btn--primary {
+a.btn--primary-wide,
+input[type='submit'].btn--primary,
+input[type='submit'].btn--primary-wide {
   background: #1e39d2;
   color: #fff;
   border: 2px solid transparent; }
-  .btn--primary:hover,
+  .btn--primary:hover, .btn--primary-wide:hover,
+  input[type='submit'].btn--primary-wide:hover,
   a.btn--primary:hover,
-  input[type='submit'].btn--primary:hover {
+  a.btn--primary-wide:hover,
+  input[type='submit'].btn--primary:hover,
+  input[type='submit'].btn--primary-wide:hover {
     background: #14278f; }
 
-.btn--secondary,
+.btn--secondary, .btn--secondary-wide,
+a.btn--secondary-wide,
+input[type='submit'].btn--secondary-wide,
 a.btn--secondary,
-input[type='submit'].btn--secondary {
+a.btn--secondary-wide,
+input[type='submit'].btn--secondary,
+input[type='submit'].btn--secondary-wide {
   background: #fff;
   color: #1e39d2;
   border: 2px solid #1e39d2; }
+
+.btn--primary-wide,
+a.btn--primary-wide,
+input[type='submit'].btn--primary-wide {
+  display: block;
+  width: 100%;
+  text-align: center; }
+
+.btn--secondary-wide,
+a.btn--secondary-wide,
+input[type='submit'].btn--secondary-wide {
+  display: block;
+  width: 100%;
+  text-align: center; }
 
 section {
   padding: 24px; }
@@ -531,6 +556,8 @@ header .logo h5 {
   font-weight: 300; }
 
 footer {
+  background: #3668d2;
+  color: #dde5f7;
   padding: 24px;
   font-size: 0.75rem; }
 

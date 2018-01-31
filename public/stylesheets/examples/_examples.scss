@@ -59,6 +59,11 @@
   @include col(9, 12, $unit-l, $unit-s);
   border-radius: $base-border-radius;
 }
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: $unit-l;
+}
 section.example {
   background: #fff;
   margin-bottom: $unit-xl;

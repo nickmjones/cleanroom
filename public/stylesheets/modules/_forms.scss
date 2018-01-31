@@ -53,3 +53,14 @@ textarea:focus {
     user-select: none;
   }
 }
+
+.userform--inline {
+  @include grid-row;
+  input:not([type='submit']),
+  textarea {
+    @include col(3, 4, $unit-m, $unit-s);
+  }
+  input[type='submit'] {
+    @include col(1, 4, 0, $unit-s);
+  }
+}

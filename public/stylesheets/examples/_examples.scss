@@ -68,9 +68,10 @@ section.example {
   font-size: ms(-1);
   margin: 0;
   padding: $unit-m;
-  color: $color-teal !important;
+  color: $color-kind-blue !important;
   text-transform: uppercase;
   letter-spacing: 0.09rem;
+  font-weight: 400;
 }
 .left-column ul {
   list-style: none;
@@ -160,13 +161,13 @@ body.examples {
 }
 
 header {
-  background: #494b63;
+  background: $color-kind-blue;
   @include grid-row;
   padding: $unit-l;
 }
 header .logo {
   @include col(4, 12, $unit-l);
-  color: lighten(#494b63, 40%);
+  color: lighten($color-kind-blue, 40%);
 }
 header .logo h3, h5 {
   margin: 0;
@@ -196,6 +197,7 @@ footer {
 p.annotation {
   color: #0072ac;
   font-family: monospace;
+  margin: 0 0 $unit-m;
 }
 
 // Tables

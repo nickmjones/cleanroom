@@ -237,6 +237,28 @@ textarea:focus {
   pointer-events: none;
   user-select: none; }
 
+.userform--inline {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  margin-bottom: 8px; }
+  .userform--inline input:not([type='submit']),
+  .userform--inline textarea {
+    width: 75%;
+    margin: 0 12px 0 0;
+    padding: 8px;
+    border-radius: 4px; }
+    .userform--inline input:not([type='submit']):last-of-type,
+    .userform--inline textarea:last-of-type {
+      margin-right: 0; }
+  .userform--inline input[type='submit'] {
+    width: 25%;
+    margin: 0 0 0 0;
+    padding: 8px;
+    border-radius: 4px; }
+    .userform--inline input[type='submit']:last-of-type {
+      margin-right: 0; }
+
 .message {
   border-radius: 4px;
   padding: 12px;
@@ -358,9 +380,10 @@ section.example {
   font-size: 0.83333em;
   margin: 0;
   padding: 12px;
-  color: #5ccfc2 !important;
+  color: #3668d2 !important;
   text-transform: uppercase;
-  letter-spacing: 0.09rem; }
+  letter-spacing: 0.09rem;
+  font-weight: 400; }
 
 .left-column ul {
   list-style: none;
@@ -474,7 +497,7 @@ body.examples {
   border-radius: 4px; }
 
 header {
-  background: #494b63;
+  background: #3668d2;
   display: flex;
   flex-direction: row;
   align-content: space-around;
@@ -486,7 +509,7 @@ header .logo {
   margin: 0 16px 0 0;
   padding: 0;
   border-radius: 4px;
-  color: #b2b3c6; }
+  color: #dde5f7; }
   header .logo:last-of-type {
     margin-right: 0; }
 
@@ -516,7 +539,8 @@ footer {
 
 p.annotation {
   color: #0072ac;
-  font-family: monospace; }
+  font-family: monospace;
+  margin: 0 0 12px; }
 
 table.example-type-specimen {
   width: 100%; }

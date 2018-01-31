@@ -1,0 +1,40 @@
+// CSS Utilities
+// =======================================
+
+// States
+.is-centered {
+  text-align: center;
+}
+.is-inactive {
+  pointer-events: none;
+  opacity: 0.6;
+}
+.is-hidden {
+  display: none;
+}
+
+// Image aligners (alpha)
+.img--left {
+  float: left;
+}
+.img--right {
+  float: right;
+}
+.img--fill {
+  width: 100%;
+}
+
+// Floats
+.float-left {
+  float: left;
+  @include cr-clearfix;
+}
+
+.float-right {
+  float: right;
+  @include cr-clearfix;
+}
+
+.clearfix {
+  @include cr-clearfix;
+}

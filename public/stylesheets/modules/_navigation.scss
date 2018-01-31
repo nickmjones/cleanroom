@@ -1,0 +1,84 @@
+// Navigation
+// =======================================
+
+.nav--inline {
+  @include grid-row;
+  height: 80px;
+  border-bottom: 1px solid $color-lt-gray;
+}
+.nav--inline * {
+  //border: 1px solid red;
+}
+.nav--inline__menu {
+  @include col(3, 12, 0, 0);
+}
+.nav--inline__logo {
+  @include col(6, 12, 0, 0);
+  text-align: center;
+  background: url("https://d2ffutrenqvap3.cloudfront.net/items/1F2p1r20072k2G0c3J0B/ci_logo.png") center center no-repeat;
+  background-size: 140px 50px;
+}
+.nav--inline__ttarp {
+  @include col(3, 12, 0, 0);
+  padding: 0 $unit-xxl;
+}
+.nav--inline__ttarp .copy {
+  float: left;
+  width: 70%;
+  margin-top: $unit-l+5;
+  margin-left: $unit-l+5;
+}
+.nav--inline__ttarp .avatar {
+  border-radius: 100px;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-top: $unit-s+2;
+  border: 2px solid $color-success;
+}
+.nav--inline__ttarp h4, h5 {
+  margin: 0;
+}
+.nav--inline__ttarp h4 {
+  font-size: ms(0);
+  margin-bottom: $unit-xs;
+}
+.nav--inline__ttarp h5 {
+  font-size: 60%;
+}
+
+.nav--inline__menu {
+  padding: 0 $unit-xxl;
+}
+
+.nav--inline__menu dl.menu {
+  width: 2rem;
+  text-align: center;
+  margin-top: $unit-l;
+  dt {
+    font-size: ms(4);
+    line-height: 1;
+  }
+  dd {
+    font-size: ms(-3);
+    text-transform: uppercase;
+  }
+}
+
+.linklist--inline {
+  @include grid-row;
+  list-style: none;
+  border-bottom: 1px solid $color-lt-gray;
+}
+.linklist--inline__item {
+  @include col(2, 12, 0, 0);
+  font-size: ms(-1);
+  text-align: center;
+  padding-bottom: $unit-s;
+  transition: all 0.20s ease-in-out;
+}
+.linklist--inline__item:hover,
+.linklist--inline__item--current {
+  color: $color-red;
+  border-bottom: 1px solid red;
+  cursor: pointer;
+}

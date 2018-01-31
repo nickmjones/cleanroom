@@ -47,7 +47,6 @@
   width: percentage($num/$count);
   margin: 0 $gutter 0 0;
   padding: $padding;
-  border-radius: $base-border-radius;
   &:last-of-type {
     margin-right: 0;
   }

@@ -12,6 +12,9 @@
 .is-hidden {
   display: none;
 }
+.has-border {
+  border: 1px solid $color-lt-gray;
+}
 
 // Image aligners (alpha)
 .img--left {

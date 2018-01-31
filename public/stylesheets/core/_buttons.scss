@@ -37,6 +37,14 @@ input[type='submit'].btn--primary {
   }
 }
 
+.btn--primary-inactive,
+a.btn--primary-inactive,
+input[type='submit'].btn--primary-inactive {
+  @extend .btn--primary;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
 // TODO: Add deactivated state for buttons
 
 .btn--secondary,

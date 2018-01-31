@@ -52,7 +52,7 @@
   @include grid-row;
 }
 .left-column {
-  @include col(3, 12, $unit-l, $unit-s);
+  @include col(3, 12, 0, $unit-s);
   border-radius: $base-border-radius;
 }
 .right-column {
@@ -77,6 +77,7 @@ section.example {
   text-transform: uppercase;
   letter-spacing: 0.09rem;
   font-weight: 400;
+  background: transparentize(#fff, 0.6);
 }
 .left-column ul {
   list-style: none;

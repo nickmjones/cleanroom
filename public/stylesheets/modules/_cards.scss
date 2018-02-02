@@ -1,0 +1,19 @@
+// Cards
+// =======================================
+
+.card-deck {
+  @include grid-row;
+}
+.card {
+  @include col(3, 12, $unit-m, $unit-l);
+  border: 1px solid #efefef;
+  overflow: hidden;
+}
+.card img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+.card h1 { font-size: ms(1); margin: 0 0 $unit-xs; }
+.card h2 { font-size: ms(0); font-weight: 400; margin: 0 0 $unit-s; }
+.card p { font-size: ms(-1);}

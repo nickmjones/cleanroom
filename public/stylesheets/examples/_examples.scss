@@ -221,31 +221,3 @@ table.example-type-specimen {
     padding-top: $unit-m;
   }
 }
-
-// Fake homepage
-
-.card-deck {
-  @include grid-row(0 $unit-l);
-  margin-top: $unit-xxl;
-  align-items: center;
-  justify-content: center;
-}
-.card-deck--card {
-  @include col(2.4, 12, $unit-l, 0);
-  text-align: center;
-  border: 1px solid $color-lt-gray;
-}
-.card-deck--card__image img {
-  background: #fff;
-  object-fit: cover;
-  width: 100%;
-}
-.card-deck--card__caption {
-  background: #fff;
-  padding: $unit-l;
-  background: #efefef;
-}
-.card-deck--card__caption h5, p {
-  margin: 0;
-  font-size: 80%;
-}

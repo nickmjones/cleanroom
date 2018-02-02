@@ -24,12 +24,14 @@
 // for a flexbox grid instance
 // =======================================
 
-@mixin grid-row($padding: 0 0 0 0) {
+@mixin grid-row($padding: 0) {
   display: flex;
-  flex-direction: row;
-  align-content: space-around;
+  flex-wrap: no-wrap;
   margin-bottom: $unit-s;
   padding: $padding;
+  @include for-phone-only {
+    flex-wrap: wrap;
+  }
 }
 
 // =======================================
@@ -44,12 +46,21 @@
 // $padding: optional padding to be applied inside the element
 // =======================================
 
-@mixin col($num, $count, $gutter, $padding: 0) {
-  width: percentage($num/$count);
+@mixin col($num, $count, $gutter: $unit-s, $padding: 0) {
   margin: 0 $gutter 0 0;
   padding: $padding;
   &:last-of-type {
     margin-right: 0;
+  }
+  @include for-phone-only {
+    width: percentage($count/$count);
+    margin: 0 0 $gutter 0;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  };
+  @include for-tablet-landscape-up {
+    width: percentage($num/$count);
   }
 }
 

@@ -596,45 +596,19 @@ textarea:focus {
   background: #F95E5B; }
 
 .columns {
-  display: flex;
-  flex-wrap: no-wrap;
-  margin-bottom: 8px;
-  padding: 0; }
-  @media (max-width: 599px) {
-    .columns {
-      flex-wrap: wrap; } }
+  display: flex; }
 
 .left-column {
-  margin: 0 0 0 0;
+  width: 25%;
   padding: 16px;
+  margin-right: 0;
   border-radius: 4px; }
-  .left-column:last-of-type {
-    margin-right: 0; }
-  @media (max-width: 599px) {
-    .left-column {
-      width: 100%;
-      margin: 0 0 0 0; }
-      .left-column:last-of-type {
-        margin-bottom: 0; } }
-  @media (min-width: 900px) {
-    .left-column {
-      width: 25%; } }
 
 .right-column {
-  margin: 0 16px 0 0;
-  padding: 8px;
+  width: 75%;
+  padding: 16px;
+  margin-left: -16px;
   border-radius: 4px; }
-  .right-column:last-of-type {
-    margin-right: 0; }
-  @media (max-width: 599px) {
-    .right-column {
-      width: 100%;
-      margin: 0 0 16px 0; }
-      .right-column:last-of-type {
-        margin-bottom: 0; } }
-  @media (min-width: 900px) {
-    .right-column {
-      width: 75%; } }
 
 .sticky {
   position: -webkit-sticky;

@@ -48,14 +48,18 @@
 }
 
 .columns {
-  @include grid-row;
+  display: flex;
 }
 .left-column {
-  @include col(3, 12, 0, $unit-l);
+  width: percentage(3/12);
+  padding: $unit-l;
+  margin-right: 0;
   border-radius: $base-border-radius;
 }
 .right-column {
-  @include col(9, 12, $unit-l, $unit-s);
+  width: percentage(9/12);
+  padding: $unit-l;
+  margin-left: -$unit-l;
   border-radius: $base-border-radius;
 }
 .sticky {

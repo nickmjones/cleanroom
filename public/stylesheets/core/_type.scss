@@ -8,8 +8,8 @@ $header-font: 'SharpSans', Helvetica, Arial, sans-serif;
 $body-font: 'SharpSans', Helvetica, Arial, sans-serif;
 
 h1, h2, h3, h4, h5 {
-  font-family: $header-font;
   margin: 1.414rem 0 0.75rem;
+  font-family: $header-font;
   line-height: 1.2;
 }
 
@@ -33,26 +33,26 @@ h5 {
 }
 
 p {
-  font-size: ms(0);
   margin: 1.414rem 0 0.5rem;
+  font-size: ms(0);
 
   &.legal {
-    font-size: ms(-1);
     margin: 1.414rem 0 0.5rem;
+    font-size: ms(-1);
   }
 }
 
 hr {
-  margin-bottom: $unit-xl;
   height: 0;
+  margin-bottom: $unit-xl;
   border: 0;
   border-bottom: 1px solid #d7d7d7;
 }
 
 
 body {
-  font-family: $example-font;
   color: #444;
+  font-family: $example-font;
   line-height: 1.45;
 }
 

@@ -3,15 +3,15 @@
 // Base button class
 
 .btn {
-  font-size: 1rem;
   display: inline-block;
+  margin-bottom: $unit-xl;
   padding: $unit-s $unit-xl;
   border-radius: 4px;
-  margin-bottom: $unit-xl;
   box-shadow: 0 2px 6px transparentize(#000, 0.7);
-  transition: all 0.15s ease-in-out;
-  cursor: pointer;
   font-family: $body-font;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
   &:hover {
     box-shadow: 0 4px 8px transparentize(#000, 0.7);
     text-decoration: none;
@@ -29,9 +29,9 @@
 .btn--primary,
 a.btn--primary,
 input[type='submit'].btn--primary {
+  border: 2px solid transparent;
   background: $color-action;
   color: #fff;
-  border: 2px solid transparent;
   &:hover {
     background: darken($color-blue, 15%);
   }
@@ -48,9 +48,9 @@ input[type='submit'].btn--primary-inactive {
 .btn--secondary,
 a.btn--secondary,
 input[type='submit'].btn--secondary {
+  border: 2px solid $color-action;
   background: #fff;
   color: $color-action;
-  border: 2px solid $color-action;
   &:hover {
     //background: #efefef;
   }

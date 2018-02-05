@@ -25,18 +25,23 @@
     font-weight: lighter;
     margin: 0;
     line-height: 1.45;
-    font-size: ms(1);
+    font-size: ms(0);
   }
   h5 {
     font-weight: lighter;
     margin: $unit-xs 0 0;
-    font-size: ms(-1);
+    font-size: ms(-2);
   }
 }
 .navigation__ttarp__icon,
 .navigation__chat__icon {
   float: left;
   margin: $unit-m $unit-m 0 0;
+}
+
+.mobile-nav {
+  padding: $unit-l;
+  font-size: ms(2);
 }
 
 .linklist {

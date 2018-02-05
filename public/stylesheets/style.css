@@ -245,6 +245,9 @@ section {
   .hide-at-mobile {
     display: none !important; } }
 
+.hide-at-desktop {
+  display: none; }
+
 @media (max-width: 599px) {
   .show-at-mobile {
     display: block; } }
@@ -589,17 +592,21 @@ textarea:focus {
     font-weight: lighter;
     margin: 0;
     line-height: 1.45;
-    font-size: 1.2em; }
+    font-size: 1em; }
   .navigation__ttarp h5,
   .navigation__chat h5 {
     font-weight: lighter;
     margin: 4px 0 0;
-    font-size: 0.83333em; }
+    font-size: 0.69444em; }
 
 .navigation__ttarp__icon,
 .navigation__chat__icon {
   float: left;
   margin: 12px 12px 0 0; }
+
+.mobile-nav {
+  padding: 16px;
+  font-size: 1.44em; }
 
 .linklist {
   display: flex;

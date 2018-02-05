@@ -18,6 +18,9 @@
 .hide-at-mobile {
   @include for-phone-only {display: none !important;}
 }
+.hide-at-desktop {
+  display: none;
+}
 .show-at-mobile {
   @include for-phone-only {display: block;}
 }

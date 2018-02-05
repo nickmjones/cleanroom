@@ -16,8 +16,15 @@
   border: 1px solid $color-lt-gray;
 }
 .hide-at-mobile {
-  @include for-phone-only {display: none;}
+  @include for-phone-only {display: none !important;}
 }
+.show-at-mobile {
+  @include for-phone-only {display: block;}
+}
+.center-at-mobile {
+  @include for-phone-only {text-align: center;}
+}
+
 
 // Image aligners (alpha)
 .img--left {
@@ -44,4 +51,13 @@
 
 .clearfix {
   @include cr-clearfix;
+}
+
+// Type
+.lighter {
+  font-weight: lighter;
+}
+.upcase {
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
 }

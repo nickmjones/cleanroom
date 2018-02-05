@@ -1,0 +1,184 @@
+// custom classes for the homepage
+// -----------------------------
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid $color-lt-gray;
+  height: 100px;
+}
+.navigation__logo {
+  background: url('https://d2ffutrenqvap3.cloudfront.net/items/1F2p1r20072k2G0c3J0B/ci_logo.png') no-repeat $unit-l;
+  background-size: 160px 60px;
+  width: percentage(8/12);
+}
+.navigation__ttarp {
+  width: percentage(2/12);
+}
+.navigation__chat {
+  width: percentage(2/12);
+}
+.navigation__ttarp,
+.navigation__chat {
+  padding-top: $unit-l;
+  h3 {
+    font-weight: lighter;
+    margin: 0;
+    line-height: 1.45;
+    font-size: ms(1);
+  }
+  h5 {
+    font-weight: lighter;
+    margin: $unit-xs 0 0;
+    font-size: ms(-1);
+  }
+}
+.navigation__ttarp__icon,
+.navigation__chat__icon {
+  float: left;
+  margin: $unit-m $unit-m 0 0;
+}
+
+.linklist {
+  @include grid-row;
+  border-bottom: 1px solid $color-lt-gray;
+  margin: 0;
+}
+.linklist__item {
+  list-style: none;
+  @include col(2, 12, 0, $unit-m);
+  text-align: center;
+}
+
+// page hero
+
+.hero {
+  height: 35vh;
+  margin-bottom: 0;
+}
+.hero img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.intro {
+  padding: 0 0 $unit-xl*2;
+}
+
+
+// stack: shipping
+.shipping {
+  @include grid-row;
+  padding: $unit-xl 0;
+  //border-bottom: 1px solid $color-lt-gray;
+}
+.shipping__item {
+  @include col(3, 12, 0, 0);
+  padding: $unit-xl $unit-m;
+}
+.shipping__item:first-of-type {
+  background: url('https://d2ffutrenqvap3.cloudfront.net/items/3R0X0H462m0f3p3W2I2S/Screen%20Shot%202018-02-05%20at%2010.46.36%20AM.png') center center no-repeat;
+}
+.shipping__item h4 {
+  color: $color-red;
+  font-size: ms(0);
+  margin: 0;
+}
+.shipping__item dl dt {
+  font-size: ms(1);
+}
+.shipping__item dl dd {
+  font-size: ms(-1);
+}
+
+
+// stack: callouts
+.callouts {
+  @include grid-row;
+  margin: 0 auto $unit-xl auto;
+  width: 80vw;
+}
+.callouts__item {
+  position: relative;
+  transition: all 0.20s ease-in-out;
+  background: #444;
+  cursor: pointer;
+}
+.callouts__item:hover {
+  img {
+    opacity: 0.8;
+  }
+  .callouts__item__caption {
+    background: $color-red;
+    color: #fff;
+  }
+}
+.callouts__item__caption {
+  transition: all 0.20s ease-in-out;
+  position: absolute;
+  height: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  color: #444;
+  padding: $unit-xl;
+  font-size: ms(-1);
+}
+
+.callouts__item img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.20s ease-in-out;
+}
+.callouts__item--thirds {
+  @include col(4, 12, $unit-xl, 0);
+}
+.callouts__item--twothirds {
+  @include col(8.20, 12, $unit-xl, 0);
+}
+
+// stack: categories
+.categories {
+  @include grid-row;
+  margin: $unit-xxl auto;
+  width: 70vw;
+}
+.categories__list {
+  @include col(3, 12, 0, $unit-xl);
+  list-style: none;
+}
+
+// brands
+// more cards/grid+col
+.brands {
+  @include grid-row;
+  width: 70vw;
+  margin: $unit-xxl auto;
+}
+.brands__item {
+  @include col(1.3, 12, $unit-m, $unit-m);
+  text-align: center;
+  background: #d7d7d7;
+}
+
+// here to help block
+// three cards/grid+col
+
+.help {
+  margin: 0;
+  background: $color-lt-gray;
+}
+.help__cards {
+  @include grid-row;
+  padding: $unit-xxl;
+}
+.help__card {
+  @include col(4, 12, $unit-xl, $unit-xl);
+  text-align: center;
+  background: #fff;
+  border-bottom: 1px solid $color-gray;
+}
+.help__card p {
+  text-align: left;
+}

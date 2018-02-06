@@ -53,13 +53,22 @@
     margin-right: 0;
   }
   @include for-phone-only {
+    // On mobile we override flex item width
+    // and force it to 100%
     width: percentage($count/$count);
     margin: 0 0 $gutter 0;
     &:last-of-type {
       margin-bottom: 0;
     }
   };
+  @include for-tablet-portrait-up {
+    // Explicitly set the tablet breakpoint to mirror
+    // landscape and up
+    width: percentage($num/$count);
+  }
   @include for-tablet-landscape-up {
+    // For larger viewports we just pass in
+    // the normal number/count values
     width: percentage($num/$count);
   }
 }

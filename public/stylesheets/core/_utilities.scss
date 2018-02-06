@@ -27,6 +27,9 @@
 .center-at-mobile {
   @include for-phone-only {text-align: center;}
 }
+.twoup-at-mobile {
+  @include for-phone-only {width: percentage(1/2) !important;}
+}
 
 
 // Image aligners (alpha)
@@ -63,4 +66,33 @@
 .upcase {
   text-transform: uppercase;
   letter-spacing: 0.08rem;
+}
+.ruled {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  padding: $unit-l 0;
+  &::after {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    z-index: -1;
+    min-width: 20%;
+    height: 100%;
+    background: #fff;
+  }
+  &::before {
+    border-top: 2px solid #dfdfdf;
+    content:"";
+    margin: 0 auto; /* this centers the line to the full width specified */
+    position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+    top: 50%; left: 0; right: 0; bottom: 0;
+    width: 95%;
+    z-index: -1;
+  }
 }

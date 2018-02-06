@@ -8,7 +8,7 @@ $header-font: 'SharpSans', Helvetica, Arial, sans-serif;
 $body-font: 'SharpSans', Helvetica, Arial, sans-serif;
 
 h1, h2, h3, h4, h5 {
-  margin: 1.414rem 0 0.75rem;
+    margin: 1.414rem 0 0.75rem;
   font-family: $header-font;
   line-height: 1.2;
   color: #444;
@@ -66,4 +66,12 @@ ul.lined li:before {
 }
 ul.dotted li {
   list-style: disc;
+}
+
+ul {
+  margin: $unit-l 0 $unit-xl;
+}
+ul li {
+  list-style: none;
+  font-size: ms(-1);
 }

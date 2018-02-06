@@ -30,7 +30,9 @@
 .twoup-at-mobile {
   @include for-phone-only {width: percentage(1/2) !important;}
 }
-
+.no-wrap {
+  white-space: nowrap;
+}
 
 // Image aligners (alpha)
 .img--left {

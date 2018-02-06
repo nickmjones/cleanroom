@@ -10,13 +10,13 @@
 .navigation__logo {
   background: url('https://d2ffutrenqvap3.cloudfront.net/items/1F2p1r20072k2G0c3J0B/ci_logo.png') no-repeat $unit-l;
   background-size: 160px 60px;
-  width: percentage(6/12);
+  flex: 1 1 60%;
 }
 .navigation__ttarp {
-  width: percentage(2.5/12);
+  flex: 1 1 20%;
 }
 .navigation__chat {
-  width: percentage(2.5/12);
+  flex: 1 1 20%;
 }
 .navigation__ttarp,
 .navigation__chat {
@@ -179,12 +179,13 @@
   bottom: 0;
   color: #444;
   font-size: ms(-1);
-  height: auto;
+  height: 35%;
   left: 0;
   padding: $unit-xl;
   position: absolute;
   transition: all 0.20s ease-in-out;
   width: 100%;
+  margin-top: auto;
 }
 
 .callouts__item img {

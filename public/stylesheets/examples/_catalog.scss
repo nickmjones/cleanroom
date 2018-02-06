@@ -1,0 +1,37 @@
+.utilitybar {
+  display: flex;
+  flex-wrap: wrap;
+  padding: $unit-xl;
+  border-bottom: 1px solid $color-lt-gray;
+}
+
+.utilitybar h2 {
+  width: percentage(12/12);
+}
+
+.utilitybar__filter {
+  align-self: flex-start;
+  width: percentage(2/12);
+  background: $color-lt-gray;
+  margin-right: $unit-l;
+  padding: $unit-s;
+}
+.utilitybar__search {
+  margin-left: auto;
+  width: percentage(4/12);
+}
+
+.grid {
+  @include grid-row;
+}
+.grid__filterbar {
+  @include col(2, 12, 0, $unit-xl);
+}
+.grid__cards {
+  @include col(10, 12, 0, $unit-xl);
+  display: flex;
+  flex-wrap: wrap;
+}
+.grid__cards__card {
+  border: 1px solid $color-lt-gray;
+}

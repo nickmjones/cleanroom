@@ -153,51 +153,52 @@
   font-size: ms(-1);
 }
 
-// stack: callouts
-.callouts {
-  @include grid-row;
-  margin: 0 auto $unit-xl auto;
-  width: 80vw;
-}
-.callouts__item {
-  background: #444;
-  cursor: pointer;
-  position: relative;
-  transition: all 0.20s ease-in-out;
-}
-.callouts__item:hover {
-  img {
-    opacity: 0.8;
-  }
-  .callouts__item__caption {
-    background: $color-red;
-    color: #fff;
-  }
-}
-.callouts__item__caption {
-  background: #fff;
-  bottom: 0;
-  color: #444;
-  font-size: ms(-1);
-  height: 35%;
-  left: 0;
-  padding: $unit-xl;
-  position: absolute;
-  transition: all 0.20s ease-in-out;
-  width: 100%;
-  margin-top: auto;
-}
+// stack: features
 
-.callouts__item img {
-  height: 100%;
-  transition: all 0.20s ease-in-out;
+.half { flex: 1 1 50%; }
+.third { flex: 1 1 33%; }
+.twothird { flex: 1 1 66%; }
+.full { flex: 1 1 100%; }
+
+.features {
+  display: flex;
+  width: 80vw;
+  margin: auto;
+  padding: $unit-m;
+}
+.features__item {
+  margin: $unit-l;
+  transition: all 0.15s ease-in-out;
+  box-shadow: 0 3px 25px #fff;
+}
+.features__item:hover {
+  box-shadow: 0 6px 25px #d7d7d7;
+  transform: translateY(-10px);
+}
+.features__item .caption {
+  padding: $unit-l;
+}
+.features__item img {
   width: 100%;
+  margin: 0;
 }
-.callouts__item--thirds {
-  @include col(4, 12, $unit-xl, 0);
+.material-style::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+  background-color: $color-red;
+	width: 0;
+  transition: all 0.15s ease-in;
+	border-radius: 0 0 8px 8px;
 }
-.callouts__item--twothirds {
-  @include col(8.20, 12, $unit-xl, 0);
+.material-style:hover {
+	background: #fff;
+  &::after {
+		width: 100.25%;
+	}
 }
 
 // stack: categories
@@ -224,6 +225,20 @@
   text-align: center;
 }
 
+// you are creative
+.creative {
+  background: $color-teal;
+  overflow: hidden;
+  padding: $unit-xxl 0 0;
+}
+.creative__row {
+  display: flex;
+  width: 80vw;
+  margin: auto;
+}
+.creative__card {
+  padding: $unit-xl;
+}
 // here to help block
 // three cards/grid+col
 .help {

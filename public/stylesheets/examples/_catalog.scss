@@ -25,13 +25,36 @@
   @include grid-row;
 }
 .grid__filterbar {
-  @include col(2, 12, 0, $unit-xl);
+  flex: 1 1 6rem;
+  padding: $unit-xl;
 }
 .grid__cards {
-  @include col(10, 12, 0, $unit-xl);
+  padding: $unit-xl;
+  flex: 1 1 75%;
   display: flex;
   flex-wrap: wrap;
 }
 .grid__cards__card {
   border: 1px solid $color-lt-gray;
+  flex: 1 1 18%;
+  overflow: hidden;
+  padding: $unit-l;
+  margin-right: $unit-s;
+  margin-bottom: $unit-s;
+  transition: all 0.10s ease-out;
+  background: #fff;
+  text-align: center;
+}
+.grid__cards__card:nth-child(5n+5) {
+  margin-right: 0;
+}
+.grid__cards__card img {
+  display: block;
+  width: 100%;
+}
+.grid__cards__card:hover {
+  box-shadow: 0 10px 20px #d7d7d7;
+  transform: translateY(-$unit-m);
+  //transform: scale(1.05,1.05);
+  border-bottom: 1px solid $color-kind-blue;
 }

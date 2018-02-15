@@ -153,15 +153,8 @@
   font-size: ms(-1);
 }
 
-// stack: features
-
-.half { flex: 1 1 50%; }
-.third { flex: 1 1 33%; }
-.twothird { flex: 1 1 66%; }
-.full { flex: 1 1 100%; }
-
 .features {
-  display: flex;
+  @include grid-row;
   width: 80vw;
   margin: auto;
   padding: $unit-m;
@@ -272,7 +265,7 @@
   text-align: center;
 
   .datestamp {
-    color: $color-red;
+    color: $color-gray;
     font-size: ms(-1);
   }
   .wordballoon {

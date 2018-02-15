@@ -1,0 +1,15 @@
+// Sizes
+// convenience classes for sizing grid items
+
+.half {
+  @include col(6, 12, $unit-xl, 0);
+}
+.third {
+  @include col(4, 12, $unit-xl, 0);
+}
+.twothird {
+  @include col(4, 12, $unit-xl, 0);
+}
+.full {
+  @include col(12, 12, $unit-xl, 0);
+}

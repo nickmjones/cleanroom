@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ==========================================================================
    #RESET
    ========================================================================== */
@@ -152,13 +153,25 @@ ul {
   margin: 16px 0 24px; }
 
 ul li {
-  list-style: none;
-  font-size: 0.83333em; }
+  list-style: none; }
+
+ul.disc {
+  margin-left: 16px; }
+  ul.disc li {
+    list-style-type: disc; }
+
+ul.checked {
+  margin-left: 16px; }
+  ul.checked li {
+    list-style-type: none; }
+  ul.checked li::before {
+    content: "✓ \00a0";
+    color: #23b268; }
 
 .btn {
   display: inline-block;
   margin-bottom: 24px;
-  padding: 8px 24px;
+  padding: 12px 24px;
   border-radius: 4px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   font-family: "SharpSans", Helvetica, Arial, sans-serif;
@@ -228,6 +241,11 @@ input[type='submit'].btn--secondary-wide {
   display: block;
   width: 100%;
   text-align: center; }
+
+.btn--block {
+  width: 60%;
+  margin: 24px auto;
+  display: block; }
 
 section {
   padding: 24px; }
@@ -828,7 +846,7 @@ textarea:focus {
 
 .features__item {
   margin: 16px;
-  transition: all 0.15s ease-in-out;
+  transition: transform 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   box-shadow: 0 3px 25px #fff; }
 
 .features__item:hover {
@@ -851,7 +869,7 @@ textarea:focus {
   transform: translateX(-50%);
   background-color: #fa3c00;
   width: 0;
-  transition: all 0.15s ease-in;
+  transition: all 0.10s ease-in;
   border-radius: 0 0 8px 8px; }
 
 .material-style:hover {
@@ -934,7 +952,6 @@ textarea:focus {
   padding: 24px; }
 
 .help {
-  background: #d7d7d7;
   margin: 0; }
 
 .help__cards {
@@ -947,34 +964,95 @@ textarea:focus {
     .help__cards {
       flex-wrap: wrap; } }
 
-.help__card {
+.help__card, .help__card--testimonial {
   margin: 0 24px 0 0;
   padding: 24px;
   background: #fff;
-  border-bottom: 1px solid #939393;
-  text-align: center; }
-  .help__card:last-of-type {
+  border-bottom: 1px solid #939393; }
+  .help__card:last-of-type, .help__card--testimonial:last-of-type {
     margin-right: 0; }
   @media (max-width: 599px) {
-    .help__card {
+    .help__card, .help__card--testimonial {
       width: 100%;
       margin: 0 0 24px 0; }
-      .help__card:last-of-type {
+      .help__card:last-of-type, .help__card--testimonial:last-of-type {
         margin-bottom: 0; } }
   @media (min-width: 600px) {
-    .help__card {
+    .help__card, .help__card--testimonial {
       width: 33.33333%; } }
   @media (min-width: 900px) {
-    .help__card {
+    .help__card, .help__card--testimonial {
       width: 33.33333%; } }
+
+.help__card h4, .help__card--testimonial h4 {
+  text-align: center; }
 
 .help__card__image {
   background: #efefef;
   height: 190px;
-  margin: 24px 0; }
+  width: 190px;
+  margin: 24px auto;
+  border-radius: 100px; }
 
-.help__card p {
+.help__card p, .help__card--testimonial p {
   text-align: left; }
+
+.help__card--testimonial {
+  text-align: center; }
+  .help__card--testimonial .datestamp {
+    color: #fa3c00;
+    font-size: 0.83333em; }
+  .help__card--testimonial .wordballoon {
+    background: #5ccfc2;
+    color: #fff;
+    border-radius: 8px;
+    padding: 24px;
+    margin: 24px 0;
+    position: relative; }
+    .help__card--testimonial .wordballoon:before {
+      content: "\201C";
+      position: absolute;
+      width: 44px;
+      height: 44px;
+      top: -20px;
+      left: -20px;
+      font-family: Times, Georgia, serif;
+      text-align: center;
+      font-size: 2.98598em;
+      line-height: 1.3;
+      background: #fa3c00;
+      border-radius: 100px;
+      border: 3px solid #fff; }
+    .help__card--testimonial .wordballoon:after {
+      content: "";
+      border-top: 20px solid #5ccfc2;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      width: 0;
+      height: 0;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -20px; }
+
+.service {
+  padding: 112px 0; }
+
+.copy {
+  background: #d7d7d7;
+  height: 300px;
+  width: 80vw;
+  margin: 24px auto;
+  display: block !important;
+  position: relative; }
+  .copy .seal {
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    bottom: -2rem;
+    right: -2rem;
+    background: url("https://d2ffutrenqvap3.cloudfront.net/items/0z0n3y3M2O2w1w0j1G3H/seal.png") center center no-repeat;
+    background-size: contain; }
 
 .utilitybar {
   display: flex;

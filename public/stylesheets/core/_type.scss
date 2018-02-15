@@ -74,5 +74,21 @@ ul {
 }
 ul li {
   list-style: none;
-  font-size: ms(-1);
+}
+
+ul.disc {
+  margin-left: $unit-l;
+  li {
+    list-style-type: disc;
+  }
+}
+ul.checked {
+  margin-left: $unit-l;
+  li {
+    list-style-type: none;
+  }
+  li::before {
+    content: "✓ \00a0";
+    color: $color-success;
+  }
 }

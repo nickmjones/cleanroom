@@ -5,7 +5,7 @@
 .btn {
   display: inline-block;
   margin-bottom: $unit-xl;
-  padding: $unit-s $unit-xl;
+  padding: $unit-m $unit-xl;
   border-radius: 4px;
   box-shadow: 0 2px 6px transparentize(#000, 0.7);
   font-family: $body-font;
@@ -74,4 +74,10 @@ input[type='submit'].btn--secondary-wide {
   display: block;
   width: 100%;
   text-align: center;
+}
+
+.btn--block {
+  width: 60%;
+  margin: $unit-xl auto;
+  display: block;
 }

@@ -99,3 +99,28 @@
     z-index: -1;
   }
 }
+
+// Material-like hover cards
+.material-style {
+  transition: transform 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.material-style::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+  background-color: $color-red;
+	width: 0;
+  transition: all 0.10s ease-in;
+	border-radius: 0 0 8px 8px;
+}
+.material-style:hover {
+	background: #fff;
+  box-shadow: 0 6px 25px #d7d7d7;
+  transform: translateY(-10px);
+  &::after {
+		width: 100.25%;
+	}
+}
